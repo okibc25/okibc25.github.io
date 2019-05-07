@@ -1,2 +1,2 @@
 #My Portfolio
-Setting up my portfolio
+The Portfolio of Christina Barker 

@@ -3,8 +3,8 @@ body {
 }
 
 header {
-   background: url(../images/fbkgrd.jpg) center / cover;
-   height: 60vh;
+   background: url(../images/doord.png) center / cover;
+   height: 30vh;
    justify-content: center;
    text-align: center;
  }
@@ -29,7 +29,7 @@ header {
  }
 
  .project img {
-   width: 100%;
+   width: 50%;
  }
 
  footer.mdl-mini-footer {
@@ -49,4 +49,4 @@ header {
    header.mdl-layout__header {
      display: flex;
    }
- }
+ }*/
