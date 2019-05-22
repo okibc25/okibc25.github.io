@@ -1,36 +1,37 @@
+nav{
+  position: absolute;
+  width: 1440px;
+  height: 72px;
+  right: 0px;
+  bottom: 2420px;
+  background-color: #FFFFFF;
+}
+
 body {
   padding-bottom: 5rem;
 }
 
 header {
-   background: url(../images/fbkgrd.jpg) center / cover;
-   height: 60vh;
+  position: relative;
    justify-content: center;
-   text-align: center;
+   text-align: left;
  }
 
- h1 {
-   color: hsla(0, 0%, 100%, 0.9);
-   font-weight: bold;
+ .door{
+   position: absolute;
+   width: 1441px;
+   height: 677px;
+   left: 0px;
+   top: 72px;
  }
 
- .slogan {
-   color: hsla(0, 0%, 100%, 0.7);
-   font-weight: lighter;
-   font-size: 1.6rem;
- }
-
- main {
-   max-width: 900px;
- }
-
- .project-description {
-   padding-left: 0;
- }
-
- .project img {
-   width: 100%;
- }
+.phone{
+  position; absolute;
+  width: 173px;
+  height: 362px;
+  left: 709px;
+  top:
+}
 
  footer.mdl-mini-footer {
    bottom: 0;
