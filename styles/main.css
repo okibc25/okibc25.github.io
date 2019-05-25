@@ -1,3 +1,13 @@
+:root {
+
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Poppins,
+
+}
+
 body {
   padding-bottom: 5rem;
 }
@@ -8,27 +18,25 @@ header {
    text-align: left;
  }
 
+ .container {
+   background-color: white;
+   display: grid;
+   grid-template-columns: 200px 500px;
+   grid-template-rows: 200px 100px 400px;
+   grid-gap: 20px;
+ }
 
-.phone{
-  position; absolute;
-  width: 173px;
-  height: 362px;
-  left: 709px;
-  top:
+.column{
+  float: right;
+  width: 33.33%;
+  padding: 5px;
 }
 
- footer.mdl-mini-footer {
-   bottom: 0;
-   padding: 0.5rem;
-   position: fixed;
-   width: 100%;
-   z-index: 1;
- }
-
- .footer.mdl-mini-footer > ul {
-   margin: auto;
-   font-size: 2rem;
- }
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
  @media screen and (max-width: 1024px) {
    header.mdl-layout__header {
