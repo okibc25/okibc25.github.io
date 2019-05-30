@@ -1,41 +1,147 @@
+* {
+  box-sizing: border-box;;
+}
+
 :root {
+  --dark gray: #262627;
+  --light gray: #616161;
+  --blue: #002447;
 
 }
 
 html {
-  box-sizing: border-box;
-  font-family: Poppins,
-
+font-size: 20px;
 }
 
 body {
-  padding-bottom: 5rem;
+  background-color: #ffffff;
+
 }
 
-header {
-  position: relative;
-   justify-content: center;
-   text-align: left;
+.header {
+  grid-area: header;
+  padding: 30px;
+  text-align: left;
+}
+
+h1 {
+  font-family: Poppins;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2.875rem;
+  display: flex;
+  align-items: center;
+  color:#262627;
+}
+
+h2 {
+  font-family: Poppins;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2.0rem;
+  color: #262627;
+}
+
+h3 {
+font-family: PT Serif;
+font-style: normal;
+font-weight: bold;
+font-size: 1.6rem;
+color:#262627;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: right;
+  display: block;
+  color: #262627;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  color: #BC672C;
+}
+
+ .logo{
+   position: absolute;
+   height: 45px;
+   left: 50px;
+   top: 9px;
  }
 
- .container {
+
+.icons {
+  height: 50px;
+}
+
+.slogan {
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color:#002447;
+}
+
+.about {
+  font-family: Poppins Light;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.3125rem;
+  color:#616161;
+}
+
+.about-project {
+  font-family: Poppins Light;
+  font-style: normal;
+  font-size: 1.3125rem;
+  color:#616161;
+}
+
+.project-description {
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size:
+}
+
+
+ .grid-container {
    background-color: white;
    display: grid;
-   grid-template-columns: 200px 500px;
-   grid-template-rows: 200px 100px 400px;
-   grid-gap: 20px;
+   grid-gap: 1rem;
+   grid-template-columns: 2fr 5.5fr 2fr;
+   grid-template-rows: 2fr 5.5fr 2fr;
+   grid-auto-rows: 3fr;
+   grid-auto-columns: 100px;
+   grid-template-areas:
+   "header header header"
+   "left middle right"
+   "footer footer footer";
  }
 
-.column{
-  float: right;
-  width: 33.33%;
-  padding: 5px;
-}
 
 .row::after {
   content: "";
   clear: both;
   display: table;
+}
+
+@media screen (min-width: 30rem) {
+  nav {
+    grid-template-columns: 1fr auto auto;
+    justify-item: start;
+  }
 }
 
  @media screen and (max-width: 1024px) {
