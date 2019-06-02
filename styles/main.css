@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box;;
+  box-sizing: border-box;
 }
 
 :root {
@@ -15,23 +15,45 @@ font-size: 20px;
 
 body {
   background-color: #ffffff;
+}
+
+header {
+  height: 75vh;
+}
+
+p{
+  font-size: 1.6rem;
+}
+
+.header-home {
+  margin: auto;
+  padding-top: 20vh;
+  width:auto;
 
 }
 
-.header {
-  grid-area: header;
-  padding: 30px;
-  text-align: left;
+.header-core {
+  background-image: url('../images/Desktop.png');
+  height:625px;
+  width:auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+  border-top: 10px;
+  padding: 10px;
 }
-
+/*** Typography ***/
 h1 {
+  float: left;
   font-family: Poppins;
   font-weight: normal;
   font-style: normal;
   font-size: 2.875rem;
-  display: flex;
-  align-items: center;
+  align-items: left;
   color:#262627;
+  margin: auto;
+  position: absolute;
+  left: 16%;
 }
 
 h2 {
@@ -64,7 +86,7 @@ color:#262627;
   font-style: normal;
   font-weight: normal;
   text-align: center;
-  padding: 14px 16px;
+  padding: 16px 16px;
   text-decoration: none;
 }
 
@@ -73,13 +95,12 @@ color:#262627;
   color: #BC672C;
 }
 
- .logo{
+.logo{
    position: absolute;
-   height: 45px;
+   height: 55px;
    left: 50px;
-   top: 9px;
+   top: 7px;
  }
-
 
 .icons {
   height: 50px;
@@ -88,16 +109,41 @@ color:#262627;
 .slogan {
   font-family: PT Serif;
   font-style: normal;
-  font-weight: bold;
-  font-size: 1.6rem;
+  font-weight:normal;
+  font-size: 1.9rem;
   color:#002447;
+  margin-bottom: 0;
+  padding-left: 190px;
+  padding-top: 25px;
+  margin-bottom: 0;
+}
+
+.quote {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: lighter;
+  color: #616161;
+  margin: 0;
+  padding-left: 190px;
+  text-align: left;
+}
+
+.by {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 1rem;
+  color:#616161;
+  margin: 0;
+  padding-left: 190px;
 }
 
 .about {
+  position: absolute;
   font-family: Poppins Light;
   font-style: normal;
   font-weight: 300;
-  font-size: 1.3125rem;
+  font-size: 1.12rem;
   color:#616161;
 }
 
@@ -106,38 +152,88 @@ color:#262627;
   font-style: normal;
   font-size: 1.3125rem;
   color:#616161;
+  margin: auto;
 }
 
+.project-name {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.0rem;
+  margin:0;
+
+}
 .project-description {
   font-family: PT Serif;
   font-style: normal;
-  font-weight: 300;
-  font-size:
+  font-weight: bold;
+  font-size:1.6rem;
+  color: #002447;
+  margin: auto;
 }
 
+.button {
+  background-color: #79C5E7;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: Poppins Medium;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+  padding: 15px 15px 15px 15px;
+  position: relative;
+  margin-top: 180px;
 
- .grid-container {
-   background-color: white;
+}
+
+ .grid-container-1 {
    display: grid;
    grid-gap: 1rem;
-   grid-template-columns: 2fr 5.5fr 2fr;
-   grid-template-rows: 2fr 5.5fr 2fr;
-   grid-auto-rows: 3fr;
-   grid-auto-columns: 100px;
+   grid-template-columns: auto auto;
+   grid-template-rows: auto auto;
    grid-template-areas:
-   "header header header"
-   "left middle right"
-   "footer footer footer";
+   "left right ";
+   background-color:#f2f2f2;
+   width: auto;
+   height: 100vh;
  }
 
+ .left-1 {
+   align-self: center;
+   grid-column-start: 1;
+   grid-column-end: 1;
+   position: relative;
+   padding-left: 20px;
+   margin-left: 15px;
+   justify-content: center;
+   align-items: center;
+ }
 
+.right-1 {
+  align-self:center;
+ grid-column-start: 2;
+ grid-column-end: 2;
+ justify-content: center;
+ align-items: center;
+
+}
+
+img.phones {
+  postion: absolute;
+}
+
+.footer {
+
+}
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
 
-@media screen (min-width: 30rem) {
+/**@media screen (min-width: 30rem) {
   nav {
     grid-template-columns: 1fr auto auto;
     justify-item: start;
@@ -148,4 +244,4 @@ color:#262627;
    header.mdl-layout__header {
      display: flex;
    }
- }
+ }**/
