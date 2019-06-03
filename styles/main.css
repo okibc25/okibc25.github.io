@@ -2,13 +2,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --dark gray: #262627;
-  --light gray: #616161;
-  --blue: #002447;
-
-}
-
 html {
 font-size: 20px;
 }
@@ -18,24 +11,19 @@ body {
 }
 
 header {
-  height: 75vh;
-}
-
-p{
-  font-size: 1.6rem;
+  height: 60vh;
 }
 
 .header-home {
   margin: auto;
-  padding-top: 20vh;
+  padding-top: 15vh;
   width:auto;
-
 }
 
 .header-core {
   background-image: url('../images/Desktop.png');
-  height:625px;
-  width:auto;
+  height: 75vh;
+  width: auto;
   background-position: center;
   background-repeat: no-repeat;
   margin: auto;
@@ -53,7 +41,7 @@ h1 {
   color:#262627;
   margin: auto;
   position: absolute;
-  left: 16%;
+  padding-left: 190px;
 }
 
 h2 {
@@ -139,12 +127,15 @@ color:#262627;
 }
 
 .about {
-  position: absolute;
   font-family: Poppins Light;
   font-style: normal;
   font-weight: 300;
   font-size: 1.12rem;
   color:#616161;
+  margin: 0;
+  padding-left: 75px;
+  padding-right: 50px;
+  padding-bottom: 50px;
 }
 
 .about-project {
@@ -161,86 +152,131 @@ color:#262627;
   font-weight: bold;
   font-size: 2.0rem;
   margin:0;
-
+  padding-left: 75px;
+  padding-top: 50px;
 }
+
 .project-description {
   font-family: PT Serif;
   font-style: normal;
   font-weight: bold;
   font-size:1.6rem;
   color: #002447;
-  margin: auto;
+  margin: 0;
+  padding-left: 75px;
+  padding-right: 30px;
 }
 
 .button {
   background-color: #79C5E7;
-  border: none;
   border-radius: 5px;
   color: #ffffff;
   font-family: Poppins Medium;
   font-style: normal;
+  margin-top: 10px;
+  padding: 10px 24px;
   text-align: center;
   text-decoration: none;
-  margin: auto;
-  padding: 15px 15px 15px 15px;
-  position: relative;
-  margin-top: 180px;
-
 }
 
- .grid-container-1 {
+ .container {
    display: grid;
-   grid-gap: 1rem;
-   grid-template-columns: auto auto;
-   grid-template-rows: auto auto;
-   grid-template-areas:
-   "left right ";
-   background-color:#f2f2f2;
-   width: auto;
-   height: 100vh;
+   grid-template-columns: 1fr 2fr 2fr 1fr;
+   grid-template-rows: minmax(auto 1fr);
+   grid-gap: 1em;
+   background-color: #f2f2f2;
  }
 
- .left-1 {
-   align-self: center;
-   grid-column-start: 1;
-   grid-column-end: 1;
-   position: relative;
-   padding-left: 20px;
-   margin-left: 15px;
-   justify-content: center;
-   align-items: center;
+ .casestudy-l{
+   grid-column-start: 2;
+   grid-column-end:3;
+   grid-area: casestudy-l;
  }
 
-.right-1 {
-  align-self:center;
- grid-column-start: 2;
- grid-column-end: 2;
- justify-content: center;
- align-items: center;
+ .casestudy-r {
+   grid-column-start: 3;
+   grid-column-end:4;
+   grid-area: casestudy-r;
+ }
 
-}
+ .what{
+   grid-area: what;
+ }
 
-img.phones {
-  postion: absolute;
+ .role{
+   background-color:#f3f3f3;
+   grid-area: role;
+ }
+
+ .challenge{
+   background-color:#f3f3f3;
+   grid-area: challenge;
+ }
+
+ .analysis{
+   background-color:#f3f3f3;
+   grid-area: analysis;
+ }
+
+ a.button {
+   background-color: #79C5E7;
+   border-radius: 5px;
+   color: #ffffff;
+   font-family: Poppins Medium;
+   font-style: normal;
+   margin-top: 10px;
+   padding-left: 24px;
+   text-align: center;
+   text-decoration: none;
+ }
+
+.phones {
+  margin: auto;
+  padding-left: 75px;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  height: 50vh;
 }
 
 .footer {
 
 }
+
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
 
-/**@media screen (min-width: 30rem) {
+@media screen (min-width: 30rem) {
   nav {
-    grid-template-columns: 1fr auto auto;
+    grid-template-columns: 1fr 1fr;
     justify-item: start;
   }
 }
 
- @media screen and (max-width: 1024px) {
+ @media screen and (max-width: 1025px) {
+   .container {
+     background-color: #f2f2f2;
+     grid-template-columns: 1fr 2fr 2fr 1fr;
+     grid-template-areas:
+     "header        header      header  header "
+     ". casestudy-l casestudy-r ."
+     ". what        what        ."
+     ". role        role         ."
+     ". challenge  challenge     ."
+     ". competitors competitors  ."
+     ". swot swot ."
+     ". uxr uxr ."
+     ". list list ."
+     ". uxp uxp ."
+     ". persona-s persona-d ."
+     " . uxfs uxfs ."
+     "footer footer footer footer";
+     width: 100rem;
+     margin: 0 auto;
+   }
+
    header.mdl-layout__header {
      display: flex;
    }
