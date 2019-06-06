@@ -1,0 +1,283 @@
+.c-grid-container {
+  height: 100%;
+  margin:0;
+  border: 0;
+}
+
+.c-grid-container {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 1fr 1fr 0.5fr 0.5fr;
+  grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.1fr 1.4fr 1.3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "c-logo c-logo . c-top-nav c-top-nav c-top-nav"
+  "c-header-core-hmpg c-header-core-hmpg c-header-core-hmpg c-header-core-hmpg c-header-core-hmpg c-header-core-hmpg"
+  ". c-area-1 c-area-1 c-area-1 c-area-1 ."
+  ". c-area-2 c-area-2 c-area-2 c-area-2 ."
+  ". c-area-3 c-area-3 c-area-3 c-area-3 ."
+  ". c-area-4 c-area-4 c-area-4 c-area-4 ."
+  ". c-area-4 c-area-4 c-area-4 c-area-4 ."
+  ". . c-swot-l c-swot-r . ."
+  ". c-area-5 c-area-5 c-area-5 c-area-5 ."
+  ". c-area-5 c-area-5 c-area-5 c-area-5 ."
+  ". c-area-5 c-area-5 c-area-5 c-area-5 ."
+  ". c-area-6 c-area-6 c-area-6 c-area-6 ."
+  ". . c-persona-s c-persona-d . ."
+  ". . c-persona-s c-persona-d . ."
+  ". c-area-7 c-area-7 c-area-7 c-area-7 ."
+  ". c-area-7 c-area-7 c-area-7 c-area-7 ."
+  ". . c-area-8 c-area-8 . ."
+  ". c-area-9 c-area-9 c-area-9 c-area-9 ."
+  ". . c-sk-left c-sk-right . ."
+  "c-logo-it c-logo-it c-logo-it c-logo-it c-logo-it c-logo-it"
+  ". c-area-10 c-area-10 c-area-10 c-area-10 ."
+  ". c-area-10 c-area-10 c-area-10 c-area-10 ."
+  ". c-area-11 c-area-11 c-area-11 c-area-11 ."
+  "c-sketch-bkgrnd c-sketch-bkgrnd c-sketch-bkgrnd c-sketch-bkgrnd c-sketch-bkgrnd c-sketch-bkgrnd"
+  ". c-area-12 c-area-12 c-area-12 c-area-12 ."
+  ". c-area-13 c-area-13 c-area-13 area-13 ."
+  "c-area-14-bkgrnd c-area-14-bkgrnd c-area-14-bkgrnd c-area-14-bkgrnd c-area-14-bkgrnd c-area-14-bkgrnd"
+  ". c-area-15 c-area-15 c-area-15 c-area-15 ."
+   "c-area-16 c-area-16 c-area-16 c-area-16 c-area-16 c-area-16"
+   ". c-area-17 c-area-17 c-area-17 c-area-17 ."
+   "c-area-18 c-area-18 c-area-18 c-area-18 c-area-18 c-area-18"
+   ". c-area-19 c-area-19 c-area-19 c-area-19 ."
+   "c-area-20 c-area-20 c-area-20 c-area-20 c-area-20 c-area-20"
+   ". c-area-21 c-area-21 c-area-21 c-area-21 ."
+   "c-footer-bkgrnd c-footer-bkgrnd c-footer-bkgrnd c-footer-bkgrnd c-footer-bkgrnd c-footer-bkgrnd";
+   grid-gap:10px;
+}
+
+.c-logo {
+  grid-area: logo; }
+
+.c-top-nav {
+  grid-area: top-nav; }
+
+.c-header-core-hmpg {
+  background-image: url('..images/desktop.png');
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: ". info example ." ". info example .";
+  grid-area: header-core-hmpg;
+}
+
+.c-info {
+  grid-area: info; }
+
+.c-example {
+  grid-area: example;
+  background-image: url('..images/phones.png');
+ }
+
+.c-area-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: ". . . . ." ". . . . .";
+  grid-area: area-1;
+}
+
+.c-area-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: ". . . . ." "c-deliverables c-deliverables c-deliverables c-deliverables c-deliverables";
+  grid-area: area-2;
+}
+
+.c-deliverables {
+  grid-area: c-deliverables;
+  background-image: url('');
+}
+
+.c-area-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: ". . . . ." ". . . . .";
+  grid-area: c-area-3;
+}
+
+.c-area-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: ". c-analysis c-analysis c-analysis c-analysis" ". c-images c-images c-images .";
+  grid-area: c-area-4;
+}
+
+.c-analysis {
+  grid-area: analysis;
+  padding-left: 50px;
+ }
+
+.c-images {
+  grid-area: c-images;
+ }
+
+.c-swot-l {
+  grid-area: swot-l;
+  background-color: #f2f2f2;
+}
+img.c-swot-l {
+  height:10vh;
+}
+.c-swot-r { grid-area: c-swot-r;
+background-color: #f2f2f2;
+}
+img.c-swot-r {
+  height: 10vh;
+}
+
+.c-area-5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "c-research c-research c-research" "c-data-img c-data-img c-data-img" "c-about-research c-about-research c-about-research";
+  grid-area: c-area-5;
+}
+
+.c-research { grid-area: c-research; }
+
+.c-data-img { grid-area: c-data-img; }
+
+.c-about-research { grid-area: c-about-research; }
+
+.c-area-6 { grid-area: c-area-6; }
+
+.c-persona-s { grid-area: c-persona-s; }
+
+.c-persona-d { grid-area: c-persona-d; }
+
+.c-area-7 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: ". . ." "c-high c-medium c-low";
+  grid-area: c-area-7;
+}
+
+.c-high { grid-area: c-high; }
+
+.c-medium { grid-area: c-medium; }
+
+.c-low { grid-area: c-low; }
+
+.c-area-8 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "c-large c-local";
+  grid-area: c-area-8;
+}
+
+.c-large { grid-area: c-large; }
+
+.c-local { grid-area: c-local; }
+
+.c-area-9 { grid-area: c-area-9; }
+
+.c-sk-left { grid-area: c-sk-left; }
+
+.c-sk-right { grid-area: c-sk-right; }
+
+.c-logo-it { grid-area: c-logo-it; }
+
+.c-area-10 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "c-type c-type c-type" "c-color c-color c-color";
+  grid-area: c-area-10;
+}
+
+.c-type { grid-area: c-type; }
+
+.c-color { grid-area: c-color; }
+
+.c-area-11 { grid-area: c-area-11; }
+
+.c-sketch-bkgrnd {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "c-sketch-1 c-sketch-2 c-sketch-3 c-sketch-4";
+  grid-area: c-sketch-bkgrnd;
+  background-color: #f2f2f2;
+}
+
+.c-sketch-1 { grid-area: c-sketch-1; }
+
+.c-sketch-2 { grid-area: c-sketch-2; }
+
+.c-sketch-3 { grid-area: c-sketch-3; }
+
+.c-sketch-4 { grid-area: c-sketch-4; }
+
+.c-area-12 { grid-area: c-area-12; }
+
+.c-area-13 { grid-area: c-area-13; }
+
+.c-area-14-bkgrnd {
+  background-color: #f2f2f2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "c-sketch-1 c-sketch-2 c-sketch-3 c-sketch-4";
+  grid-area:
+  c-area-14-bkgrnd;
+}
+
+.c-sketch-1 { grid-area: c-sketch-1; }
+
+.c-sketch-2 { grid-area: c-sketch-2; }
+
+.c-sketch-3 { grid-area: c-sketch-3; }
+
+.c-sketch-4 { grid-area: c-sketch-4; }
+
+.c-area-15 { grid-area: c-area-15; }
+
+.c-area-16 { grid-area: c-area-16; }
+
+.c-area-17 { grid-area: c-area-17; }
+
+.c-area-18 { grid-area: c-area-18; }
+
+.c-area-19 { grid-area: c-area-19; }
+
+.c-area-20 {
+  grid-area: c-area-20;
+  background-color: #f2f2f2;
+ }
+
+.c-area-21 {
+  grid-area: c-area-21; }
+
+.c-footer-bkgrnd {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-areas: ". . . ." "footer-main footer-main footer-main footer-main" ". . . .";
+    grid-area: footer-bkgrnd;
+    background-color: #f2f2f2;
+  }
+
+.c-footer-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: ". footer-nav ." ". footer-links .";
+    grid-area: footer-main;
+    background-color: #ffffff;
+  }
+
+.c-footer-nav { grid-area: footer-nav;
+ }
+
+.c-footer-links { grid-area: footer-links;
+}
+
+.c-footer-nav li {
+ list-style: none;
+}

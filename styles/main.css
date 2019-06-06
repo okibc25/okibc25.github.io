@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 html {
 font-size: 10px;
 }
@@ -10,37 +6,234 @@ body {
   background-color: #ffffff;
 }
 
-header {
-  height: 75vh;
+h1 {
+  font-family: Poppins;
+  font-weight:bold;
+  font-style: normal;
+  font-size: 2.75rem;
+  color: #262627;
+  margin: 0;
+  padding-left: 190px;
+  padding-top: 100px;
+  text-align: left;
+
 }
 
-p{
+h2 {
+  font-family: Poppins;
+  font-weight:bold;
+  font-style: normal;
+  font-size: 2.0rem;
+  color: #262627;
+
+}
+
+h3 {
+
+}
+
+p.about {
+  font-family: Poppins Light;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.12rem;
+  color:#616161;
+  margin-top:0px;
+}
+
+p.about-project {
+  font-family: Poppins Light;
+  font-style: normal;
+  font-weight: normal;
   font-size: 1.6rem;
+  color:#616161;
 }
-.container {
+
+p.by{
+  font-family: Poppins Light;
+  font-style: italic;
+  font-weight: 300;
+  color: #262627;
+  padding-left: 190px;
+  margin-top: 0;
+}
+
+p.project-description {
+  font-family: PT serif;
+  font-style: normal;
+  font-weight:bold;
+  font-size: 1.9rem;
+  color:#002447;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+p.quote {
+  display:block;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  color: #262627;
+  margin: 0;
+  padding-left: 190px;
+  padding-top: 25px;
+}
+
+p.slogan {
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight:bold;
+  font-size: 1.9rem;
+  color:#002447;
+  margin-top: 0;
+  padding-top: 0;
+  padding-left: 190px;
+  position:absolute;
+}
+
+img.phones {
+  height: 35vh;
+  align-items: center;
+  padding: 25px;
+}
+
+/*grid style for hmpg, about and contact pages*/
+.grid-container {
+  height: 100%;
+  margin:0;
+}
+
+.grid-container {
   display: grid;
-  grid-gap: 1em;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-  ". . . ." ". . . .";
+  grid-template-columns: 0.3fr 1fr 1fr 0.3fr;
+  grid-template-rows: 0.1fr 0.3fr 0.5fr 1fr;
+  grid-template-areas: "logo logo topnav topnav"
+            "header-hmpg header-hmpg header-hmpg header-hmpg"
+            "leftaside-1 left-1 right-1 rightaside-1"
+            /*". left-2 right-2 ."*/
+        "footer-bkgrnd footer-bkgrnd footer-bkgrnd footer-bkgrnd";
+  grid-row-gap:10px;
+  justify-items: stretch;
+  align-items: stretch;
 }
 
-.container-home {
-  width:1000px;
-}
-
-/**.left-1 {
+.leftaside-1{
+  grid-area: leftaside;
   background-color: #f2f2f2;
-  grid-column-start: 2;
-  gird-column-end: 3;
 }
-  .right-1 {
-  background-color: #f2f2f2;
-  grid-column-start: 3;
-  grid-column-end: 2;
-}**/
 
-.header-home {
-  background-color: #ffffff;
+.left-1 {
+  background-color: #f2f2f2;
+  grid-area: left-1;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right:50px;
 }
+
+.left-1 h2{
+  margin-bottom: 0;
+}
+
+.button {
+  background-color: #79C5E7;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: Poppins Medium;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 10px 5px;;
+  position: relative;
+  margin-top: 180px;
+}
+
+/*.left-2 {
+  grid-area: left-2; }*/
+
+.right-1 {
+  background-color: #f2f2f2;
+  grid-area: right-1;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+/*.right-2 {
+  grid-area: right-2; }*/
+
+.rightaside-1 {
+    grid-area: rightaside;
+    background-color: #f2f2f2;
+  }
+.footer-bkgrnd {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 0.5fr 0.3fr;
+    grid-template-areas: ". . . ." "footer-main footer-main footer-main footer-main" ". . . .";
+    grid-area: footer-bkgrnd;
+    background-color: #f2f2f2;
+  }
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas: ". footer-nav ." ". footer-links .";
+    grid-area: footer-main;
+    background-color: #ffffff;
+  }
+
+.footer-nav {
+  grid-area: footer-nav;
+  color: #262627;
+  font-family: Poppins;
+  font-size: 1.3em;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 30px;
+  padding-bottom: 10px;
+
+ }
+
+.footer-links {
+  grid-area: footer-links;
+  list-style: none;
+  align-items: center;
+}
+
+
+.topnav {
+  grid-area: topnav;
+ }
+
+ .topnav a {
+  float: right;
+  display: block;
+  color: #262627;
+  font-family: Poppins;
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: normal;
+  padding: 16px 16px;
+  text-align: center;
+  text-decoration: none;
+ }
+
+.header-hmpg {
+  background-image: url('../images/hmpgbkgrnd.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: header-hmpg;
+  height: 50vh;
+ }
+
+.logo {
+  grid-area: logo;
+  height:9vh;
+  display: block;
+  padding-top: 2px;
+  padding-left: 10px;
+ }
