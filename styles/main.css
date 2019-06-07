@@ -159,13 +159,7 @@ img.phones {
   padding-top: 30px;
 }
 
-/*.right-2 {
-  grid-area: right-2; }*/
 
-.rightaside-1 {
-    grid-area: rightaside;
-    background-color: #f2f2f2;
-  }
 .footer-bkgrnd {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
