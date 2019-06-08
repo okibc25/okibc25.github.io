@@ -4,6 +4,7 @@ font-size: 10px;
 
 body {
   background-color: #ffffff;
+  margin: 0;
 }
 
 h1 {
@@ -98,33 +99,63 @@ img.phones {
 }
 
 /*grid style for hmpg, about and contact pages*/
-.grid-container {
-  height: 100%;
-  margin:0;
+.wrapper-1 {
+  display:grid;
+  grid-template-columns: repeat(4 [col] 1fr );
+  grid-template-rows: repeat(2 [row] auto );
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 0.3fr 1fr 1fr 0.3fr;
-  grid-template-rows: 0.1fr 0.3fr 0.5fr 1fr;
-  grid-template-areas: "logo logo topnav topnav"
-            "header-hmpg header-hmpg header-hmpg header-hmpg"
-            "leftaside-1 left-1 right-1 rightaside-1"
-            /*". left-2 right-2 ."*/
-        "footer-bkgrnd footer-bkgrnd footer-bkgrnd footer-bkgrnd";
-  grid-row-gap:10px;
-  justify-items: stretch;
-  align-items: stretch;
-}
+.logo {
+  grid-area: logo;
+  grid-column: col 1;
+  grid-row: 1;
+  height:9vh;
+  display: block;
+  padding-top: 2px;
+ }
 
-.leftaside-1{
-  grid-area: leftaside;
+.topnav {
+  grid-area: topnav;
+  grid-column: col 2 / span 2;
+  grid-row: 1;
+ }
+
+ .topnav a {
+  float: right;
+  display: block;
+  color: #262627;
+  font-family: Poppins;
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: normal;
+  padding: 16px 16px;
+  text-align: center;
+  text-decoration: none;
+ }
+
+ .header-hmpg {
+   background-image: url('../images/hmpgbkgrnd.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   grid-area: header-hmpg;
+   grid-column: 1 / span 4;
+   height: 50vh;
+  }
+
+.box-1{
   background-color: #f2f2f2;
+  display:grid;
+  grid-template-columns: repeat(4 [col] 1fr );
+  grid-template-rows: repeat(2 [row] auto );
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .left-1 {
-  background-color: #f2f2f2;
   grid-area: left-1;
+  grid-column: 2;
+  grid-row: 1;
   padding-top: 50px;
   padding-left: 50px;
   padding-right:50px;
@@ -132,6 +163,16 @@ img.phones {
 
 .left-1 h2{
   margin-bottom: 0;
+}
+
+.right-1 {
+  background-color: #f2f2f2;
+  grid-area: right-1;
+  grid-column: 3;
+  grid-row: 1;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
 }
 
 .button {
@@ -148,25 +189,14 @@ img.phones {
   margin-top: 180px;
 }
 
-/*.left-2 {
-  grid-area: left-2; }*/
-
-.right-1 {
-  background-color: #f2f2f2;
-  grid-area: right-1;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 30px;
-}
-
 
 .footer-bkgrnd {
+    background-color: #f2f2f2;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.3fr 0.5fr 0.3fr;
     grid-template-areas: ". . . ." "footer-main footer-main footer-main footer-main" ". . . .";
     grid-area: footer-bkgrnd;
-    background-color: #f2f2f2;
   }
 
 .footer-main {
@@ -197,37 +227,3 @@ img.phones {
   list-style: none;
   align-items: center;
 }
-
-
-.topnav {
-  grid-area: topnav;
- }
-
- .topnav a {
-  float: right;
-  display: block;
-  color: #262627;
-  font-family: Poppins;
-  font-size: 1.6em;
-  font-style: normal;
-  font-weight: normal;
-  padding: 16px 16px;
-  text-align: center;
-  text-decoration: none;
- }
-
-.header-hmpg {
-  background-image: url('../images/hmpgbkgrnd.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  grid-area: header-hmpg;
-  height: 50vh;
- }
-
-.logo {
-  grid-area: logo;
-  height:9vh;
-  display: block;
-  padding-top: 2px;
-  padding-left: 10px;
- }
