@@ -42,6 +42,7 @@ p.about-project {
   font-weight: normal;
   font-size: 1.6rem;
   color:#616161;
+  margin-top: 2px;
 }
 
 p.by{
@@ -313,59 +314,250 @@ img.phones {
     grid-gap: 10px;
     grid-row-gap: 10px;
     grid-template-columns: repeat(4, [col] 1fr );
-    grid-template-rows: repeat(14, [row] auto );
+    grid-template-rows: repeat(7, [row] auto );
+  }
+
+  .icons {
+   float: left;
+   padding-right: 10px;
+  }
+
+  .area-1 h2 {
+    margin: 0px;
+    padding-left: 10px;
+    padding-top:  20px;
+    padding-bottom: 5px;
   }
 
   .a {
     grid-column: 2 / span 2 ;
     grid-row: 1 ;
+    margin-top: 10px;
   }
 
   .b {
     grid-column: 2 / span 2 ;
     grid-row: 2 ;
+    margin-top: 10px;
 }
+
+  .insidebox-1 {
+    display: grid;
+    grid-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(4, [col] 1fr );
+    grid-template-rows: repeat(1, [row] auto );
+  }
+
+  img.myrole {
+    grid-column: 2 / span2;
+  }
+
 
   .c {
     grid-column: 2 / span 2;
     grid-row: 3 ;
-
+    align-content: center;
+    margin-top: 10px;
   }
 
   .d {
     grid-column: 2 / span 2;
     grid-row:4 ;
-
+    margin-top: 10px;
   }
 
-  .e {
-    grid-column: 2 / span 2;
-    grid-row:5 ;
+/*competitor icons */
+  .insidebox-2 {
+    display: grid;
+    grid-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(4, [col] 1fr );
+    grid-template-rows: repeat(1, [row] auto );
+  }
+
+    .competitors {
+      grid-column: 2 / span 2;
+      grid-row:1 ;
+    }
+/*close competitors - icons*/
+
+/*swot analysis of two of four companies*/
+  .insidebox-3 {
+    display: grid;
+    grid-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(4, [col] 1fr );
+    grid-template-rows: repeat(1, [row] auto );
+
+  }
+    .swot-l {
+    grid-column: 1 / span 2;
+    grid-row: 1;
 
     }
 
-    .f {
+    .swot-r {
+    grid-column: 3 / span 2;
+    grid-row: 1;
+  }
+/*close out the swot*/
+
+  .e{
     grid-column: 2 / span 2;
+    grid-row: 5;
+  }
+
+  .f{
+    grid-column: 2 / span 2 ;
     grid-row: 6;
+  }
 
-    }
-
-    .g {
+  .g {
     grid-column: 2 / span 2;
     grid-row: 7;
   }
 
-  .h{
-    grid-column: 2 / span 2;
-    grid-row: 8;
+/* Grid Area-2 Start*/
+  .area-2 {
+    display: grid;
+    grid-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(4, [col] 1fr );
+    grid-template-rows: repeat(4, [row] auto );
   }
 
-  .i{
-    grid-column: 2 / span 2 ;
-    grid-row: 9;
+  .h {
+    grid-column: 2 / span 2;
+    grid-row: 1;
   }
 
-  .j{
-    grid-column: 2 / span 2;
-    grid-row: ;
+/*subgrid for personas*/
+  .ux-personas {
+
   }
+
+/*inside persona grid*/
+  .persona-l {
+
+  }
+
+  .persona-r {
+
+  }
+/*end of persona back to area-2 grid*/
+
+  .i {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+  }
+
+  .j {
+    grid-column: 2 / span 2;
+    grid-row: 3;
+  }
+
+  .k {
+    grid-column: 2 / span 2;
+    grid-row: 4;
+  }
+/*end of grid area-2*/
+
+/*begin grid area-3*/
+.area-3 {
+  display: grid;
+  grid-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-columns: repeat(4, [col] 1fr );
+  grid-template-rows: repeat(5, [row] auto );
+}
+
+  .l {
+    grid-column: 2 / span 2;
+    grid-row: 1;
+  }
+
+  .m {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+  }
+
+  .n {
+    grid-column: 2 / span 2;
+    grid-row: 3;
+  }
+
+  .o {
+    grid-column: 2 / span 2;
+    grid-row: 5;
+  }
+
+  .p {
+    grid-column: 2 / span 2;
+    grid-row: 5;
+  }
+/*end of grid area-3*/
+
+/*begin grid area-4*/
+.area-4 {
+display: grid;
+grid-gap: 10px;
+grid-row-gap: 10px;
+grid-template-columns: repeat(4, [col] 1fr );
+grid-template-rows: repeat(10, [row] auto );
+}
+
+.q {
+  grid-column: 2 / span 2;
+  grid-row: 1;
+}
+
+.r {
+  grid-column: 2 / span 2;
+  grid-row: 2;
+}
+
+.s {
+  grid-column: 2 / span 2;
+  grid-row: 3;
+}
+
+.t {
+  grid-column: 2 / span 2;
+  grid-row: 4;
+}
+
+.u {
+  grid-column: 2 / span 2;
+  grid-row: 5;
+}
+
+
+.v {
+  grid-column: 2 / span 2;
+  grid-row: 6;
+}
+
+
+.w {
+  grid-column: 2 / span 2;
+  grid-row: 7;
+}
+
+
+.x {
+  grid-column: 2 / span 2;
+  grid-row: 8;
+}
+
+
+.y {
+  grid-column: 2 / span 2;
+  grid-row: 9;
+}
+
+
+.z {
+  grid-column: 2 / span 2;
+  grid-row: 10;
+}
