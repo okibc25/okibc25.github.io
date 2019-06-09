@@ -13,11 +13,6 @@ h1 {
   font-style: normal;
   font-size: 2.75rem;
   color: #262627;
-  margin: 0;
-  padding-left: 190px;
-  padding-top: 100px;
-  text-align: left;
-
 }
 
 h2 {
@@ -26,7 +21,6 @@ h2 {
   font-style: normal;
   font-size: 2.0rem;
   color: #262627;
-
 }
 
 h3 {
@@ -99,24 +93,27 @@ img.phones {
 }
 
 /*grid style for hmpg, about and contact pages*/
+
 .wrapper-1 {
-  display:grid;
-  grid-template-columns: repeat(4 [col] 1fr );
-  grid-template-rows: repeat(2 [row] auto );
+  display: grid;
+  grid-columns: 4 [col] 1fr;
+  grid-rows: repeat(2 [row] auto );
+  grid-gap: 10px;
 }
 
 .logo {
   grid-area: logo;
   grid-column: col 1;
   grid-row: 1;
-  height:9vh;
   display: block;
-  padding-top: 2px;
+  height:8vh;
+  padding-top: 5px;
+  margin: 0;
  }
 
 .topnav {
   grid-area: topnav;
-  grid-column: col 2 / span 2;
+  grid-column: col 3 / span 1;
   grid-row: 1;
  }
 
@@ -128,7 +125,7 @@ img.phones {
   font-size: 1.6em;
   font-style: normal;
   font-weight: normal;
-  padding: 16px 16px;
+  padding: 16px 20px;
   text-align: center;
   text-decoration: none;
  }
@@ -142,12 +139,21 @@ img.phones {
    height: 50vh;
   }
 
+  .header-hmpg > h1 {
+    grid-column: col 2;
+    margin: 0;
+    padding-left: 190px;
+    padding-top: 100px;
+    text-align: left;
+  }
+
 .box-1{
   background-color: #f2f2f2;
   display:grid;
-  grid-template-columns: repeat(4 [col] 1fr );
-  grid-template-rows: repeat(2 [row] auto );
+  grid-columns: repeat(4 [col] 1fr );
+  grid-rows: repeat(2 [row] auto );
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -189,7 +195,6 @@ img.phones {
   margin-top: 180px;
 }
 
-
 .footer-bkgrnd {
     background-color: #f2f2f2;
     display: grid;
@@ -227,3 +232,5 @@ img.phones {
   list-style: none;
   align-items: center;
 }
+
+/*styling for core case study page*/
