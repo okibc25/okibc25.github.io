@@ -24,7 +24,10 @@ h2 {
 }
 
 h3 {
-
+   font-family: PT serif;
+   font-style: normal;
+   font-size: 2.5rem;
+   color: #002447;
 }
 
 p.about {
@@ -88,6 +91,14 @@ p.slogan {
   padding-left: 190px;
   position:absolute;
 }
+
+
+  .icons {
+   float: left;
+   height: 10vh;
+   padding-right: 10px;
+
+  }
 
 img.phones {
   height: 35vh;
@@ -287,8 +298,8 @@ img.phones {
 
   .box-2 {
     display: grid;
-    grid-gap: 10px;
-    grid-row-gap: 10px;
+    grid-gap: 20px;
+    grid-row-gap: 20px;
     grid-template-columns: repeat(4, [col] 1fr );
     grid-template-rows: repeat(2, [row] auto );
   }
@@ -311,20 +322,16 @@ img.phones {
 
   .area-1 {
     display: grid;
-    grid-gap: 10px;
-    grid-row-gap: 10px;
+    grid-gap: 20px;
+    grid-row-gap: 20px;
     grid-template-columns: repeat(4, [col] 1fr );
     grid-template-rows: repeat(7, [row] auto );
-  }
-
-  .icons {
-   float: left;
-   padding-right: 10px;
+    margin: 10px;
   }
 
   .area-1 h2 {
     margin: 0px;
-    padding-left: 10px;
+    padding-left: 20px;
     padding-top:  20px;
     padding-bottom: 5px;
   }
@@ -343,10 +350,11 @@ img.phones {
 
   .insidebox-1 {
     display: grid;
-    grid-gap: 10px;
-    grid-row-gap: 10px;
+    grid-column-gap:20px;
+    grid-row-gap: 20px;
     grid-template-columns: repeat(4, [col] 1fr );
     grid-template-rows: repeat(1, [row] auto );
+    margin: 10px;
   }
 
   img.myrole {
@@ -370,25 +378,29 @@ img.phones {
 /*competitor icons */
   .insidebox-2 {
     display: grid;
-    grid-gap: 10px;
-    grid-row-gap: 10px;
+    grid-gap: 20px;
+    grid-row-gap: 20px;
     grid-template-columns: repeat(4, [col] 1fr );
-    grid-template-rows: repeat(1, [row] auto );
+    grid-template-rows: repeat(1, [row] 2fr );
+    margin: 10px;
   }
 
     .competitors {
       grid-column: 2 / span 2;
       grid-row:1 ;
     }
+
 /*close competitors - icons*/
 
 /*swot analysis of two of four companies*/
   .insidebox-3 {
+    background-color: #f2f2f2;
     display: grid;
-    grid-gap: 10px;
-    grid-row-gap: 10px;
+    grid-gap: 20px;
+    grid-row-gap: 20px;
     grid-template-columns: repeat(4, [col] 1fr );
-    grid-template-rows: repeat(1, [row] auto );
+    grid-template-rows: repeat(1, [row] 5fr );
+    margin: 10px;
 
   }
     .swot-l {
@@ -421,10 +433,11 @@ img.phones {
 /* Grid Area-2 Start*/
   .area-2 {
     display: grid;
-    grid-gap: 10px;
-    grid-row-gap: 10px;
+    grid-gap: 20px;
+    grid-row-gap: 20px;
     grid-template-columns: repeat(4, [col] 1fr );
     grid-template-rows: repeat(4, [row] auto );
+    margin: 10px;
   }
 
   .h {
@@ -434,16 +447,24 @@ img.phones {
 
 /*subgrid for personas*/
   .ux-personas {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(4, [col] 1fr );
+    grid-template-rows: repeat(1, [row] auto );
+    margin: 10px;
 
   }
-
 /*inside persona grid*/
   .persona-l {
-
+   grid-column: col 1;
+   grid-row: 1;
   }
 
   .persona-r {
-
+    grid-column: col 3;
+    grid-row: 1;
+    padding-bottom: 15px;
   }
 /*end of persona back to area-2 grid*/
 
@@ -457,19 +478,63 @@ img.phones {
     grid-row: 3;
   }
 
+   .ux-priorities {
+     display: grid;
+     grid-column-gap: 20px;
+     grid-row-gap: 20px;
+     grid-template-columns: repeat(3, [col] 1fr );
+     grid-template-rows: repeat(1, [row] auto );
+     margin: 10px;
+   }
+
+   .c-high {
+     grid-column: 1;
+     grid-row: 1;
+   }
+
+   .c-medium {
+    grid-column: 2;
+    grid-row: 1;
+   }
+
+   .c-low {
+    grid-row: 3;
+    grid-row: 1;
+   }
+
   .k {
     grid-column: 2 / span 2;
     grid-row: 4;
+  }
+
+  .ux-flows {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(4, [col] 1fr );
+    grid-template-rows: repeat(1, [row] auto );
+    margin: 10px;
+  }
+
+  .c-large{
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .c-local {
+    grid-column: 3;
+    grid-row: 1;
   }
 /*end of grid area-2*/
 
 /*begin grid area-3*/
 .area-3 {
   display: grid;
-  grid-gap: 10px;
-  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
   grid-template-columns: repeat(4, [col] 1fr );
   grid-template-rows: repeat(5, [row] auto );
+  margin: 10px;
 }
 
   .l {
@@ -477,9 +542,29 @@ img.phones {
     grid-row: 1;
   }
 
+  .ideas {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(4, [col] 1fr );
+    grid-template-rows: repeat(1, [row] auto );
+  }
+
+  .c-idea-one {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .c-idea-two {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
   .m {
+    background-color: #f2f2f2;
     grid-column: 2 / span 2;
     grid-row: 2;
+    align-items: center;
   }
 
   .n {
@@ -487,15 +572,54 @@ img.phones {
     grid-row: 3;
   }
 
+  .c-color img {
+    padding-left: 200px;
+  }
+
   .o {
     grid-column: 2 / span 2;
-    grid-row: 5;
+    grid-row: 4;
   }
 
   .p {
     grid-column: 2 / span 2;
     grid-row: 5;
   }
+
+  .box-3{
+    background-color: #f2f2f2;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(4, [col] 0.5fr);
+    grid-template-rows: repeat(3, [row] auto );
+    margin: 10px;
+  }
+
+    .c-sketch-1 {
+      grid-column: 1;
+      grid-row: 2;
+      padding-right: 30px;
+      padding-top: 50px;
+    }
+
+    .c-sketch-2 {
+      grid-column: 2;
+      grid-row: 2;
+      align-items: center;
+    }
+
+    .c-sketch-3 {
+      grid-column: 3;
+      grid-row: 2;
+      align-items: center;
+    }
+
+    .c-sketch-4 {
+      grid-column: 4;
+      grid-row: 2;
+      align-items: center;
+    }
 /*end of grid area-3*/
 
 /*begin grid area-4*/
@@ -505,21 +629,25 @@ grid-gap: 10px;
 grid-row-gap: 10px;
 grid-template-columns: repeat(4, [col] 1fr );
 grid-template-rows: repeat(10, [row] auto );
+margin: 20px;
 }
 
 .q {
   grid-column: 2 / span 2;
   grid-row: 1;
+  margin: 20px;
 }
 
 .r {
   grid-column: 2 / span 2;
   grid-row: 2;
+  margin: 20px;
 }
 
 .s {
   grid-column: 2 / span 2;
   grid-row: 3;
+  margin: 20px
 }
 
 .t {
@@ -530,34 +658,53 @@ grid-template-rows: repeat(10, [row] auto );
 .u {
   grid-column: 2 / span 2;
   grid-row: 5;
+  padding-left: 120px;
 }
 
 
 .v {
   grid-column: 2 / span 2;
   grid-row: 6;
+  margin: 20px;
 }
 
 
 .w {
   grid-column: 2 / span 2;
   grid-row: 7;
+  margin: 20px;
 }
 
 
 .x {
   grid-column: 2 / span 2;
   grid-row: 8;
+  margin: 20px;
 }
-
 
 .y {
   grid-column: 2 / span 2;
   grid-row: 9;
+  margin: 20px;
+  padding-left: 150px;
+}
+
+.box-5 {
+  display: grid;
+  grid-gap: 5px;
+  grid-row-gap: 10px;
+  grid-template-columns: repeat(2, [col] 1fr );
+  grid-template-rows: repeat(1, [row] auto );
+}
+
+.prototype-button {
+  grid-column: 2 / span 2;
+  grid-row: 1;
 }
 
 
 .z {
   grid-column: 2 / span 2;
   grid-row: 10;
+  margin: 20px;
 }
