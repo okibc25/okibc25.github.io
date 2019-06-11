@@ -325,8 +325,8 @@ img.phones {
     grid-gap: 20px;
     grid-row-gap: 20px;
     grid-template-columns: repeat(4, [col] 1fr );
-    grid-template-rows: repeat(7, [row] auto );
-    margin: 10px;
+    grid-template-rows: repeat(3, [row] auto );
+    margin: 20px;
   }
 
   .area-1 h2 {
@@ -339,13 +339,13 @@ img.phones {
   .a {
     grid-column: 2 / span 2 ;
     grid-row: 1 ;
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   .b {
     grid-column: 2 / span 2 ;
     grid-row: 2 ;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
   .insidebox-1 {
@@ -354,7 +354,7 @@ img.phones {
     grid-row-gap: 20px;
     grid-template-columns: repeat(4, [col] 1fr );
     grid-template-rows: repeat(1, [row] auto );
-    margin: 10px;
+    margin: 20px;
   }
 
   .myrole {
@@ -362,18 +362,17 @@ img.phones {
     padding-left: 30px;
   }
 
-
   .c {
     grid-column: 2 / span 2;
     grid-row: 3 ;
     align-content: center;
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   .d {
     grid-column: 2 / span 2;
     grid-row:4 ;
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
 /*competitor icons */
@@ -383,43 +382,56 @@ img.phones {
     grid-row-gap: 20px;
     grid-template-columns: repeat(4, [col] 1fr );
     grid-template-rows: repeat(1, [row] 2fr );
-    margin: 10px;
+    margin: 20px;
   }
 
     .competitors {
       grid-column: 2 / span 2;
       grid-row:1 ;
-      padding-left: 50px;
+      text-align: center;
     }
 
 /*close competitors - icons*/
 
 /*swot analysis of two of four companies*/
-  .insidebox-3 {
+  .area-a1 {
     background-color: #f2f2f2;
     display: grid;
     grid-gap: 20px;
     grid-row-gap: 20px;
     grid-template-columns: repeat(4, [col] 1fr );
-    grid-template-rows: repeat(1, [row] 5fr );
-    margin: 10px;
+    grid-template-rows: repeat(1, [row] 3fr);
+    margin: 20px;
 
   }
     .swot-l {
-    grid-column: 1 / span 2;
+    grid-column: 2;
     grid-row: 1;
+    margin: 20px;
+    text-align: center;
 
     }
 
     .swot-r {
-    grid-column: 3 / span 2;
+    grid-column: 3;
     grid-row: 1;
+    text-align: center;
+    margin: 20px;
   }
 /*close out the swot*/
 
+.area-b1 {
+  display: grid;
+  grid-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: repeat(4, [col] 1fr );
+  grid-template-rows: repeat(3, [row] auto );
+  margin: 20px;
+}
+
   .e{
     grid-column: 2 / span 2;
-    grid-row: 5;
+    grid-row: 1;
   }
 
   .e li {
@@ -436,12 +448,12 @@ img.phones {
 
   .f{
     grid-column: 2 / span 2 ;
-    grid-row: 6;
+    grid-row: 2;
   }
 
   .g {
     grid-column: 2 / span 2;
-    grid-row: 7;
+    grid-row: 3;
   }
 
   .g li {
@@ -559,7 +571,7 @@ img.phones {
   grid-column-gap: 10px;
   grid-row-gap: 20px;
   grid-template-columns: repeat(4, [col] 1fr );
-  grid-template-rows: repeat(5, [row] auto );
+  grid-template-rows: repeat(1, [row] auto );
   margin: 10px;
 }
 
@@ -586,60 +598,70 @@ img.phones {
     grid-row: 1;
   }
 
-  .m {
+  .area-3m {
     background-color: #f2f2f2;
-    grid-column: 2 / span 2;
-    grid-row: 2;
-    align-items: center;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(4, [col] 1fr );
+    grid-template-rows: repeat(1, [row] auto );
+    text-align: center;
+    margin: 20px;
   }
 
+  .m {
+    grid-column: 2 / span 2;
+    grid-row: 1;
+  }
+
+.area-3n {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: repeat(4, [col] 1fr );
+  grid-template-rows: repeat(2, [row] auto );
+}
   .n {
     grid-column: 2 / span 2;
-    grid-row: 3;
+    grid-row: 1;
   }
 
   .o {
     grid-column: 2 / span 2;
-    grid-row: 4;
+    grid-row: 2;
   }
 
-  .p {
-    grid-column: 2 / span 2;
-    grid-row: 5;
-  }
-
-  .box-3{
+  .area-p {
+    background-color: #f2f2f2;
     display: grid;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    grid-template-columns: repeat(4, [col] 0.5fr);
-    grid-template-rows: repeat(3, [row] auto );
+    grid-template-columns: repeat(4, [col] 1fr);
+    grid-template-rows: repeat(1, [row] auto );
     margin: 10px;
-    justify-items: center;
+    text-align: center;
   }
 
-    .c-sketch-1 {
+    .c-sketch-p1 {
       grid-column: 1;
-      grid-row: 2;
-      align-items: center;
+      grid-row: 1;
+      text-align: center;;
     }
 
-    .c-sketch-2 {
+    .c-sketch-p2 {
       grid-column: 2;
-      grid-row: 2;
-      text-align: center;
+      grid-row: 1;
+      text-align: center;;
     }
 
-    .c-sketch-3 {
+    .c-sketch-p3 {
       grid-column: 3;
-      grid-row: 2;
-      text-align: center;
+      grid-row: 1;
     }
 
-    .c-sketch-4 {
+    .c-sketch-p4 {
       grid-column: 4;
-      grid-row: 2;
-      text-align: center;
+      grid-row: 1;
     }
 /*end of grid area-3*/
 
@@ -649,7 +671,7 @@ display: grid;
 grid-gap: 10px;
 grid-row-gap: 10px;
 grid-template-columns: repeat(4, [col] 1fr );
-grid-template-rows: repeat(3, [row] auto );
+grid-template-rows: repeat(2, [row] auto );
 margin: 20px;
 }
 
