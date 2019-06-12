@@ -30,6 +30,19 @@ h3 {
    color: #002447;
 }
 
+  .icons {
+   float: left;
+   height: 10vh;
+   padding-right: 10px;
+
+  }
+
+img.phones {
+  height: 35vh;
+  align-items: center;
+  padding: 25px;
+}
+
 p.about {
   font-family: Poppins Light;
   font-style: normal;
@@ -92,28 +105,38 @@ p.slogan {
   position:absolute;
 }
 
-
-  .icons {
-   float: left;
-   height: 10vh;
-   padding-right: 10px;
-
+/*media queries for smaller screens*/
+@media screen and (min-width: 480px) {
+  .wrapper-1 {
+    width: 1em;
   }
 
-img.phones {
-  height: 35vh;
-  align-items: center;
-  padding: 25px;
+  div#header {
+
+  }
+}
+
+@media screen and (min-width: 760px) {
+.wrapper-1 {
+  width: 70rem;
+  }
+
+ .box-1 {
+   width: 70rem;
+
+   .
+  }
+
+  .footer-background {
+    width: 70rem;
+  }
 }
 
 /*grid style for hmpg, about and contact pages*/
-
+@media screen and (min-width: 1000px) {
 .wrapper-1 {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(4, [col] 1fr );
-  grid-template-rows: repeat(2, [row] auto );
-  background-color: #ffffff;
+  width: 98rem;
+  }
 }
 
 .logo {
@@ -822,3 +845,5 @@ margin: 20px;
   grid-row: 1;
   margin: 20px;
 }
+
+@media screen and (min-width: )
