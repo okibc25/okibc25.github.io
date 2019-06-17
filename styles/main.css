@@ -47,12 +47,56 @@ h3 {
   .icons {
    float: left;
    height: 10vh;
-   padding-right: 10px;
   }
+
+img.color {
+  height: auto;
+  width: 100%;
+}
+
+img.first-core-phones {
+  width:100%;
+  height: auto;
+}
+
+img.core-phones {
+  width: 100%;
+  height: auto;
+}
+
+img.dropbox {
+  width: 100%;
+  height: auto;
+}
+
+img.googledrive {
+  width: 100%;
+  height: auto;
+}
+
+img.logos {
+  width: 100%;
+  height: auto;
+}
 
 img.phones {
     width: 100%;
     height: auto;
+}
+
+img.wireframe1 {
+  width: 100%;
+  height: auto;
+}
+
+img.wireframe2 {
+  width: 100%;
+  height: auto;
+}
+
+img.wireframe3 {
+  width: 100%;
+  height: auto;
 }
 
 
@@ -125,7 +169,7 @@ p.slogan {
   position:absolute; */
 }
 
-/*for smartphone sizes*/
+/* This targets mobile view*/
 .container {
   display: grid;
   grid-gap: 2rem;
@@ -135,33 +179,33 @@ p.slogan {
   }
 
   .logo {
-      grid-area: logo;
-      grid-row: 1;
-      width: 100%;
-      height: auto;
-    }
+    grid-area: logo;
+    grid-row: 1;
+    width: 100%;
+    height: auto;
+  }
 
   .topnav {
-      grid-area: topnav;
-      align-items: center;
-      margin: 5px;
-      text-align: center;
-      height: 5vh;
-    }
+    grid-area: topnav;
+    align-items: center;
+    margin: 5px;
+    text-align: center;
+    height: 5vh;
+  }
 
   .topnav a {
-     color:#262627;
-     margin: 5px;
-    }
+    color:#262627;
+    margin: 5px;
+  }
 
   h1 {
-      margin: 2px 20px 2px 20px;
-      text-align: left;
-    }
+    margin: 2px 20px 2px 20px;
+    text-align: left;
+  }
 
-  h2{
-      margin: 2px 20px 2px 20px;
-    }
+  h2 {
+    margin: 2px 20px 2px 20px;
+  }
 
   .hero-core {
      display: grid;
@@ -169,6 +213,12 @@ p.slogan {
      grid-column: 1fr;
      grid-template-rows: repeat(2, [row] auto );
     }
+
+  .icons {
+    float: left;
+    height: 10vh;
+    margin-right: 10px;
+  }
 
    p.about {
      margin: 2px 20px 2px 20px;
@@ -182,7 +232,7 @@ p.slogan {
      margin: 2px 20px 2px 20px;
     }
 
-   p.project-name {
+   .project-name {
      margin: 2px 20px 2px 20px;
     }
 
@@ -211,6 +261,7 @@ p.slogan {
     .left-1 {
      display: grid;
      grid-row: 1;
+     margin-top: 10px;
     }
 
     .button {
@@ -294,13 +345,6 @@ p.slogan {
    margin: 10px;
  }
 
- .area-1 h2 {
-   margin: 0px;
-   padding-left: 20px;
-   padding-top:  20px;
-   padding-bottom: 5px;
- }
-
  .a {
    display: grid;
    grid-row: 1 ;
@@ -322,7 +366,8 @@ p.slogan {
 
  .myrole {
    grid-row: 1;
-   padding-left: 30px;
+   width: 100%;
+   height: auto;
  }
 
  .c {
@@ -396,12 +441,18 @@ p.slogan {
    text-decoration: none;
  }
 
- .f{
+ .f {
    grid-row: 2;
  }
 
+   img.data {
+    width: 100%;
+    height: auto;
+   }
+
  .g {
    grid-row: 3;
+   margin: 10px;
  }
 
  .g li {
@@ -439,10 +490,12 @@ p.slogan {
  /*inside persona grid*/
  .persona-l {
   grid-row: 1;
+  text-align: center;
  }
 
  .persona-r {
-   grid-row: 2;
+  grid-row: 2;
+  text-align: center;
  }
  /*end of persona back to area-2 grid*/
 
@@ -464,14 +517,20 @@ p.slogan {
 
  .c-high {
    grid-row: 1;
+   text-align: center;
+   margin: 10px;
  }
 
  .c-medium {
   grid-row: 2;
+  text-align: center;
+  margin: 10px;
  }
 
  .c-low {
   grid-row: 3;
+  text-align: center;
+  margin: 10px;
  }
 
 .k {
@@ -488,10 +547,12 @@ p.slogan {
 
 .c-large{
   grid-row: 1;
+  margin-bottom: 10px;
 }
 
 .c-local {
-  grid-row: 2;
+ grid-row: 2;
+ margin-bottom: 10px;
 }
 /*end of grid area-2*/
 
@@ -516,10 +577,13 @@ p.slogan {
 
 .c-idea-one {
   grid-row: 1;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .c-idea-two {
   grid-row: 2;
+  text-align:center;
 }
 
 .area-3m {
@@ -535,6 +599,11 @@ p.slogan {
   grid-row: 1;
 }
 
+img.iterate {
+  width: 100%;
+  height: auto;
+}
+
 .area-3n {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
@@ -544,7 +613,176 @@ p.slogan {
 
 .n {
   grid-row: 1;
+  margin: 20ps;
 }
+
+.o {
+  grid-row: 2;
+  margin: 20px;
+}
+
+.area-p {
+  background-color: #f2f2f2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  grid-auto-rows: repeat(auto-fit, minmax(200px, auto ));
+  margin: 10px;
+}
+
+  .c-sketch-p1 {
+    grid-row: 1;
+    text-align: center;
+  }
+
+  .c-sketch-p2 {
+    grid-row: 2;
+    text-align: center;
+  }
+
+  .c-sketch-p3 {
+    grid-row: 3;
+    text-align: center;
+  }
+
+  .c-sketch-p4 {
+    grid-row: 4;
+    text-align: center;
+  }
+
+/*end of grid area-3*/
+
+/*begin grid area-4*/
+.area-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  grid-auto-rows: repeat(auto-fit, minmax(200px, auto ));
+  margin: 10px;
+}
+
+.q {
+grid-row: 1;
+margin: 20px;
+}
+
+.r {
+grid-row: 2;
+margin: 20px;
+}
+
+.area-5 {
+background-color: #f2f2f2;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+grid-auto-rows: repeat(auto-fit, minmax(200px, auto ));
+margin: 10px;
+}
+
+.c-sketch-1 {
+grid-row: 1;
+margin: 10px;
+text-align: center;
+}
+
+.c-sketch-2 {
+grid-row: 2;
+margin: 10px;
+text-align: center;
+}
+
+.c-sketch-3 {
+grid-row: 3;
+margin: 10px;
+text-align: center;
+}
+
+.area-6 {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+ grid-auto-rows: repeat(auto-fit, minmax(200px, auto ));
+ margin: 10px;
+}
+
+.t {
+  grid-row: 1;
+  margin: 20px;
+}
+
+.area-7 {
+ background-color: #f2f2f2;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+ grid-auto-rows: repeat(auto-fit, minmax(200px, auto ));
+ margin: 10px;
+}
+
+.u {
+ grid-row: 1;
+ margin: 10px;
+}
+
+img.first-core-phones {
+   align-items: center;
+}
+
+.area-8 {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+ grid-auto-rows: repeat(auto-fit, minmax(200px, auto ));
+ margin: 10px;
+}
+
+.v {
+grid-row: 1;
+margin: 20px;
+}
+
+.w {
+ grid-row: 2;
+ margin: 20px;
+}
+
+img.logos {
+ text-align: center;
+}
+
+.x {
+ grid-row: 3;
+ margin: 20px;
+}
+
+.y {
+ grid-row: 4;
+}
+
+.area-9 {
+background-color: #f2f2f2;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+grid-auto-rows: repeat(auto-fit, minmax(200px, auto ));
+margin: 10px;
+}
+
+.y {
+grid-row: 1;
+}
+
+img.core-phones {
+  align-content: center;
+}
+
+.area-10 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  grid-auto-rows: repeat(auto-fit, minmax(200px, auto ));
+  margin: 10px;
+
+}
+
+.z {
+ grid-row: 1;
+ margin: 20px;
+}
+
 
  /* .container {
    display: grid;
