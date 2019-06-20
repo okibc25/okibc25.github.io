@@ -35,7 +35,7 @@ h3 {
 }
 
 hr {
-  color:#616161;
+  color:#f2f2f2;
 }
 
 
@@ -63,11 +63,10 @@ hr {
 }
 
 /*all images included with in the website*/
-img.color, .first-core-phones, .core-phones, .c-sketch-p1,
-.c-sketch-p2, .c-sketch-p3, .c-sketch-p4, .data, .dropbox,
-.font, .flows, .googledrive, .icon, .iterate,
+img.color, .first-core-phones, .core-phones, .sketches,
+.data, .dropbox, .font, .flows, .googledrive, .icon, .iterate,
 .logo, .logos, .myrole, .phones, .signature, .sketch1, .sketch2,
-.type, .ux-testing, .wireframe1, .wireframe2, .wireframe3 {
+.type, .ux-testing, .wireframes {
   height: auto;
   width: 100%;
 }
@@ -190,7 +189,7 @@ p.about {
 }
 
 p.about-project {
-  margin-top: 1rem;
+  margin-top: .5rem;
 }
 
 p.project-description {
@@ -206,8 +205,8 @@ p.project-name {
 }
 
 .button {
-  margin-left: 8.5rem;
-  margin-top: 2rem;
+  display: block;
+  margin: 2rem;
   padding: 5px 10px 5px 10px;
   align-items: center;
   text-align: center;
@@ -218,9 +217,10 @@ p.project-name {
   margin: 3rem;
 }
 
-.icon {
-  padding-left: 14rem;
-  padding-right: 14rem;
+img.icon {
+  display: block;
+  width: 20%;
+  margin: auto;
 }
 
 img.phones {
@@ -430,15 +430,24 @@ img.logo {
    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
    grid-row: 1;
-   margin: .5rem;
-   padding: 0 1rem 1rem 1rem;
+   margin: 1rem;
+   padding: 1rem;
    text-align: center;
   }
 
   .persona-r {
+   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
    grid-row: 2;
+   margin: 1rem;
+   padding: 1rem;
    text-align: center;
   }
+
+  li {
+    text-align: left;
+  }
+
   /*end of persona back to area-2 grid*/
 
 .i {
@@ -586,22 +595,32 @@ img.logo {
 
   .c-sketch-p1 {
     grid-row: 1;
+    margin: auto;
+    padding: 2rem;
     text-align: center;
   }
 
   .c-sketch-p2 {
     grid-row: 2;
+    margin: auto;
+    padding: 2rem;
     text-align: center;
+    width: 65%;
   }
 
   .c-sketch-p3 {
     grid-row: 3;
+    margin: auto;
+    padding:2rem;
     text-align: center;
   }
 
   .c-sketch-p4 {
     grid-row: 4;
+    margin: auto;
+    padding: 2rem;
     text-align: center;
+    width: 65%;
   }
 
 /*end of grid area-3*/
@@ -718,14 +737,15 @@ margin: 10px;
 }
 
 .button-final {
-  display: grid;
+  display: block;
   background-color: #79C5E7;
   border: none;
   border-radius: 5px;
   color: #ffffff;
   font-family: Poppins Medium;
   font-style: normal;
-  margin: 0px 75px 50px 75px;
+  font-size: 1.3rem;
+  margin: 0px 7.5rem 2.5rem 7.5rem;
   padding: 10px;
   text-align: center;
 
@@ -754,6 +774,34 @@ margin: 10px;
   text-align: center;
 }
 
+/*styling for contact page form box*/
+img.signature {
+  display: block;
+  margin: auto;
+  width: 10%;
+
+}
+input, textarea, button {
+  font-family: 'Poppins Light';
+  font-size: 1em;
+  color:#616161;
+  border: 1px solid #f2f2f2;
+  background-color: #ffffff;
+  margin: .5em;
+  padding: 2em;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+button {
+  background-color: #79C5E7;
+  color: #ffffff;
+}
 
 /*media query for tablet size*/
 @media (min-width: 70rem) {
@@ -1927,20 +1975,3 @@ margin: 20px;
   margin: 20px;
    }
 }*/
-
-/*about page*/
-img.signature {
-  width:20%;
-  margin: 10px;
-}
-
-.post {
-
-}
-
-button {
-  background-color: #79C5E7;
-  border: none;
-  border-radius: 5px;
-  color: #ffffff;
-}
