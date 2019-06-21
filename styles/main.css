@@ -11,6 +11,14 @@ body {
   background-color: #ffffff;
 }
 
+.container {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(200px, auto ));
+  margin: 1rem;
+}
+
 h1 {
   font-family: 'Poppins';
   font-weight:bold;
@@ -28,7 +36,7 @@ h2 {
 }
 
 h3 {
-   font-family: 'PT' serif;
+   font-family: 'PT Serif';
    font-style: normal;
    font-size: 2.5rem;
    color: #002447;
@@ -48,6 +56,8 @@ hr {
   font-family: 'Poppins Medium';
   font-style: normal;
   font-size: 1.6rem;
+  text-align: center;
+  text-decoration: none;
 }
 
 .footer {
@@ -55,7 +65,7 @@ hr {
 }
 
 .footer-bkgrnd {
-    margin: 2rem;
+  margin: 2rem;
   }
 
 .footer-links {
@@ -77,7 +87,16 @@ img.icon {
   width: 100%;
 }
 
-p.about {
+li {
+  color: #616161;
+  font-family: 'Poppins';
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+p.about, p.about-project, p.by, p.copy-right, p.project-name {
   font-family: 'Poppins Light';
   font-style: normal;
   font-weight: 300;
@@ -86,41 +105,26 @@ p.about {
 }
 
 p.about-project {
-  font-family: 'Poppins Light';
-  font-style: normal;
   font-weight: normal;
   font-size: 1.6rem;
-  color:#616161;
   /*margin-top: 2px;*/
 }
 
 p.by{
-  font-family: 'Poppins Light';
   font-style: italic;
-  font-weight: 300;
   color: #262627;
 }
 
 p.copy-right {
-  font-family: 'Poppins Light';
-  font-style: normal;
   font-size: 1rem;
 }
 
-p.project-description {
+p.project-description, p.slogan {
   font-family: 'PT Serif';
   font-style: normal;
-  font-weight:bold;
+  font-weight: bold;
   font-size: 1.9rem;
   color:#002447;
-}
-
-p.project-name {
-  font-family: 'Poppins Light';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.6rem;
-  color:#616161;
 }
 
 p.quote {
@@ -133,11 +137,7 @@ p.quote {
 }
 
 p.slogan {
-  font-family: PT Serif;
-  font-style: normal;
-  font-weight:bold;
   font-size: 2.5rem;
-  color:#002447;
 }
 
 .topnav a {
@@ -150,13 +150,6 @@ p.slogan {
 }
 
 /*specific styling for mobile hmpg*/
-.container {
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
-  grid-auto-rows: repeat(auto-fit, minmax(200px, auto ));
-  margin: 10px;
-}
 
 .box {
   background-color: #ffffff;
@@ -165,7 +158,7 @@ p.slogan {
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
-  grid-auto-rows: repeat(auto-fit, minmax(200px, auto ));
+  grid-template-rows: repeat(auto-fit, minmax(200px, auto));
   margin: 10px;
   padding: 1rem;
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -192,7 +185,7 @@ h2 {
 
 }
 
-h2.name,  {
+h2.name  {
   text-align: left;
 }
 
@@ -229,8 +222,6 @@ p.project-name {
   margin: 2rem;
   padding: 5px 10px 5px 10px;
   align-items: center;
-  text-align: center;
-  text-decoration: none;
 }
 
 .hero-hmpg {
@@ -272,18 +263,18 @@ img.logo {
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
-    grid-auto-rows: repeat(auto-fit, minmax(200px, auto ));
+    grid-template-rows: repeat(auto-fit, minmax(200px, auto ));
     margin: 5px;
   }
 
   .core-l1 {
-      display grid;
+      display: grid;
       grid-row: 1;
       margin: 10px;
   }
 
   .core-r1 {
-    display:grid;
+    display: grid;
     grid-row: 2;
   }
 
@@ -393,16 +384,10 @@ img.logo {
     margin-top: 20px;
   }
 
-  li {
+  .e li {
     background-color: #ffffff;
     border-radius: 2px;
-    color: #616161;
-    font-family: Poppins;
-    font-size: 1.6em;
-    font-style: normal;
-    font-weight: 300;
     margin-left: 10px;
-    text-decoration: none;
   }
 
   .f {
@@ -421,13 +406,7 @@ img.logo {
   }
 
   .g li {
-    color: #616161;
-    font-family: Poppins;
-    font-size: 1.6em;
-    font-style: normal;
-    font-weight: 300;
     text-align: left;
-    text-decoration: none;
     margin-bottom: 10px;
     margin-left: 10px;
   }
@@ -484,7 +463,6 @@ img.logo {
   li {
     text-align: left;
   }
-
   /*end of persona back to area-2 grid*/
 
 .i {
@@ -548,7 +526,7 @@ img.logo {
 .ux-flows {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
-  grid-auto-rows: repeat(auto-fit, minmax(200px, auto ));
+  grid-template-rows: repeat(auto-fit, minmax(200px, auto ));
   margin: 10px;
 }
 
@@ -567,7 +545,7 @@ img.logo {
 .area-3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
-  grid-auto-rows: repeat(auto-fit, minmax(200px, auto ));
+  grid-template-rows: repeat(auto-fit, minmax(200px, auto ));
   margin: 10px;
 }
 
@@ -586,7 +564,7 @@ img.logo {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   grid-row: 1;
-  margin: ;
+  margin: 1em;
   padding: 2rem;
   text-align: center;
 }
@@ -801,7 +779,7 @@ margin: 10px;
   border: none;
   border-radius: 5px;
   color: #ffffff;
-  font-family: Poppins Medium;
+  font-family: 'Poppins Medium';
   font-style: normal;
   font-size: 1.6rem;
   margin: 0px 7.5rem 2.5rem 7.5rem;
@@ -877,25 +855,94 @@ p.by{
 /*stlying for resume page*/
 
 /*media query for tablet size*/
-@media (min-width: 70rem) {
+@media screen and (min-width: 575px) {
   .container {
-   display: grid;
-   grid-gap: 2rem;
-   grid-template-columns: 1fr 2fr 2fr 1fr;
-   grid-template-rows: repeat(2, [row] auto );
+    display: grid;
+    grid-row-gap: 2rem;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, [row] auto);
+    margin: 0 auto;
+    width: 80%;
   }
 
+  .logo {
+    display: block;
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+  .topnav {
+    grid-column: 5 / 8;
+    grid-row: 1;
+  }
 
+  .hero-hmpg {
+    background-image: url('../images/hmpgbkgrnd.png');
+    background position: center;
+    background-repeat: no-repeat;
+    grid-column: 1 / 8;
+    grid-row: 2;
+    margin: 0;
+  }
+
+  .box {
+    background-color: #f2f2f2;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(1, [row] auto);
+  }
+
+    .left-1 {
+      grid-column: 1 / 2;
+      grid-row: 1;
+    }
+
+   .right-1 {
+     grid-column: 3/ 4;
+     grid-row: 1;
+   }
+    .footer {
+
+    }
 }
 
 /*media query for desktop size*/
-@media (min-width: 124rem) {
+@media screen and (min-width: 1024px) {
   .container {
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: 2fr 2fr 4fr 2fr 2fr;
-    grid-template-rows: repeat(1, [row] auto );
+    background-color: blue;
+    grid-row-gap: 2rem;
+    grid-template-columns: repeat(12, [col] 1fr);
+    grid-template-rows: repeat(3, [row] auto );
+    margin: 0 auto;
+    width: 100rem;
   }
+
+  .logo {
+    grid-column: 1 / 4;
+    grid-row: 1;
+  }
+
+   .topnav {
+     grid-column: 5 / 8;
+     grid-row: 1;
+   }
+
+   .header-hmpg {
+     background-image: url('../images/hmpgbkgrnd.png');
+     background position: center;
+     background-repeat: no-repeat;
+     grid-column: 1 / 12;
+     grid-row: 2;
+     height: auto;
+
+   }
+   .box {
+     background-color: #f2f2f2;
+     display: grid;
+     grid-gap: 2rem;
+     grid-template-columns: repeat(12, [col] 1fr);
+   }
+
 }
 
 
