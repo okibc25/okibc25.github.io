@@ -115,7 +115,6 @@ p.slogan {
  font-size: 2.5rem;
 }
 
-
 .topnav a {
  font-family: 'Poppins';
  font-size: 1.6em;
@@ -150,21 +149,16 @@ p.slogan {
  margin-top: .7rem;
 }
 
-
 .hero-hmpg {
- background-image: url('../images/fib.jpeg');
+ background-image: url('../images/doord-sm.png');
  background-position: center;
  background-repeat: no-repeat;
+ background-size: cover;
  display: grid;
  grid-template-columns: repeat(4, [col] 1fr);
- grid-template-rows: repeat(2, [row] 1fr);
+ grid-template-rows: repeat(3, [row] 1fr);
  grid-gap: 2rem;
  margin: 0 auto;
-}
-
-.topnav {
- grid-column: 1 / span 4;
- grid-row: 1;
 }
 
 .content{
@@ -215,20 +209,23 @@ p.about{
 }
 
 .footer-links {
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  padding: .5rem;
+ display: flex;
+ justify-content: center;
+ padding: .5rem;
+}
+.copy {
+ text-align: center;
 }
 
-p.copy-right{
-  text-align: center;
+p.copy-right {
+ text-align: center;
 }
+
 
 h1 {
-  margin-top: 3rem;
-  margin-bottom: 0rem;
-  text-align: left;
+ margin-top: 3rem;
+ margin-bottom: 0rem;
+ text-align: left;
 }
 
 h2 {
@@ -319,7 +316,7 @@ img.logo {
  display: grid;
  grid-gap: 1rem;
  grid-template-columns: repeat(4, [col] 1fr);
- grid-template-rows: repeat(2, [row] auto;);
+ grid-template-rows: repeat(2, [row] auto);
  margin: 0 auto;
 }
 
@@ -737,7 +734,6 @@ img.brand {
  margin: 2rem;
 }
 
-
 .area-p {
  background-color: #f2f2f2;
  display: grid;
@@ -769,7 +765,7 @@ img.brand {
  grid-column: 1 / span 4;
  grid-row: 3;
  margin: auto;
- padding:1rem;
+ padding: 1rem;
  text-align: center;
  width: 95%;
 }
@@ -780,7 +776,7 @@ img.brand {
  margin: auto;
  padding: 1rem;
  text-align: center;
- width: 65%;
+ width: 55%;
 }
 /*end of grid area-3*/
 
@@ -916,18 +912,18 @@ margin: 1rem;
 }
 
 .button-final {
-  display: block;
-  background-color: #79C5E7;
-  border: none;
-  border-radius: 5px;
-  color: #ffffff;
-  font-family: 'Poppins Medium';
-  font-style: normal;
-  font-size: 1.6rem;
-  margin: 0px 7.5rem 2.5rem 7.5rem;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
+ display: block;
+ background-color: #79C5E7;
+ border: none;
+ border-radius: 5px;
+ color: #ffffff;
+ font-family: 'Poppins Medium';
+ font-style: normal;
+ font-size: 1.6rem;
+ margin: 0px 7.5rem 2.5rem 7.5rem;
+ padding: 10px;
+ text-align: center;
+ text-decoration: none;
 }
 .area-10 {
  display: grid;
@@ -975,9 +971,31 @@ margin: 1rem;
  padding: 1rem;
 }
 
-@media screen and(min-width: 575px) {
+@media screen and (min-width: 575px) {
  .container {
   margin: 0 auto;
+}
+/*stlying for homepage*/
+.hero-hmpg{
+ background-image: url('../images/doord-m.jpeg');
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ display: grid;
+ grid-gap: 1rem;
+ grid-template-columns: repeat(4, [col] 1fr);
+ grid-template-rows: repeat(3, [row] 1fr);
+ margin: 0 auto;
+}
+
+.content {
+ grid-column: 2 / span 2;
+ grid-row: 2;
+}
+
+.right-1 {
+ grid-column: 2 / span 2;
+ margin: 0 auto;
 }
 
 .hero-contact {
@@ -1055,7 +1073,7 @@ p.by{
  margin: 1rem;
 }
 
-.content {
+.content-about {
  grid-column: 1 / span 4;
   grid-row: 1;
   margin: 1rem;
@@ -1072,14 +1090,14 @@ p.by{
 
 /*styling for resume page*/
 
-
 @media screen and (min-width: 1100px) {
 .container {
  margin: 0 auto;
 }
 
 h1, h2 {
-  text-align: left;
+ margin: 1rem;
+ text-align: left;
 }
 
 img.icon {
@@ -1112,19 +1130,19 @@ img.icon {
 }
 
 .hero-hmpg {
- background-image: url('../images/figspiral.jpeg');
+ background-image: url('../images/doord.jpg');
  background-position: center;
  background-repeat: no-repeat;
  display: grid;
  height: 50vh;
  grid-template-columns: repeat(4, [col] 1fr);
- grid-template-rows: repeat(1, [row] 1fr);
+ grid-template-rows: repeat(3, [row] 1fr);
  grid-gap: 2rem;
 }
 
 .content {
  grid-column: 2 / span 2;
- grid-row: 1;
+ grid-row: 2;
  margin-top: 2rem;
  text-align: left;
 }
@@ -1196,17 +1214,17 @@ img.icon {
 display: grid;
 grid-gap: 2rem;
 grid-template-columns: repeat(4, [col] 1fr);
-grid-template-rows: repeat(2, [row] auto );
+grid-template-rows: repeat(3, [row] auto );
 }
 
 .core-l1 {
  grid-column: 2;
- grid-row: 1 / span 2;
+ grid-row: 1 / span 3;
 }
 
 .core-r1 {
  grid-column: 3;
- grid-row: 1 / span 2;
+ grid-row: 1 / span 3;
 }
 
 .area-1 {
@@ -1244,10 +1262,10 @@ img.icon {
   }
 
 .myrole {
-    grid-column: 2 / span 2;
-    grid-row: 1;
-    padding-left: 30px;
-  }
+ grid-column: 2 / span 2;
+ grid-row: 1;
+ padding-left: 30px;
+}
 
 .c {
  grid-column: 2/ span 2;
@@ -1380,12 +1398,33 @@ text-align: center;
 .persona-l {
  grid-column: 1;
  grid-row: 1;
+ text-align: center;
 }
 
+img[src="images/icons/susan.png"]{
+  height: auto;
+  padding: 0 8rem 0 8rem;
+  text-align: center;
+  width: 100%;
+}
 .persona-r {
 grid-column: 2;
 grid-row: 1;
+text-align: center;
 }
+
+img[src="images/icons/daniel.png"]{
+  height: auto;
+  padding: 0 8rem 0 8rem;
+  text-align: center;
+  width: 100%;
+}
+
+.persona-l > h2.title, .persona-r > h2.title {
+  text-align: center;
+  margin: 0 auto;
+}
+
 /*end of persona back to area-2 grid*/
 
 .i {
