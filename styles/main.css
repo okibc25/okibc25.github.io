@@ -78,7 +78,7 @@ li {
 }
 
 p.about, p.about-project, p.by, p.copy-right, p.project-name, p.title {
- font-family: 'Poppins Light';
+ font-family: 'Poppins';
  font-style: normal;
  font-weight: 300;
  font-size: 1.6rem;
@@ -121,6 +121,7 @@ p.slogan {
  font-style: normal;
  font-weight: normal;
  color: #262627;
+ padding: 1rem;
  text-decoration: none;
 }
 
@@ -136,17 +137,14 @@ p.slogan {
 .topnav {
  grid-column: 1 / span 4;
  grid-row: 1;
+ text-align: center;
 }
 
 .logo {
- background-image: url('../images/g-paint.png');
- background-position: center;
- background-repeat: no-repeat;
- background-size: auto;
  grid-column: 1 / span 4;
  grid-row: 1;
  text-align: center;
- margin-top: .7rem;
+ margin: 0 auto;
 }
 
 .hero-hmpg {
@@ -209,10 +207,22 @@ p.about{
 }
 
 .footer-links {
+ background-color: #ffffff;
  display: flex;
  justify-content: center;
  padding: .5rem;
 }
+
+/*styling for about me page*/
+.hero-me {
+ display: grid;
+ grid-template-columns: repeat(4, [col] 1fr);
+ grid-template-rows: repeat(1, [row] 1fr);
+ grid-gap: 1rem;
+ margin: 0 auto;
+}
+/*end specific stlying for about me page*/
+
 .copy {
  text-align: center;
 }
@@ -223,8 +233,7 @@ p.copy-right {
 
 
 h1 {
- margin-top: 3rem;
- margin-bottom: 0rem;
+ margin: 0rem 1rem 0rem 1rem;
  text-align: left;
 }
 
@@ -241,7 +250,7 @@ h2.name  {
 
 h2.project-name {
   text-align: left;
-  margin: 1rem;
+  margin: 0rem 1rem 0rem 1rem;
 }
 
 h3 {
@@ -251,7 +260,7 @@ h3 {
 }
 
 p.slogan, p.quote, p.by {
-  margin: 5px;
+  margin: 0rem 1rem 0rem 1rem;
 }
 
 p.about {
@@ -261,6 +270,7 @@ p.about {
 
 p.about-project {
   margin-top: .5rem;
+  margin-left: 1rem;
 }
 
 p.project-description {
@@ -301,6 +311,21 @@ img.logo {
 
 .topnav a {
  margin: 8px;
+}
+/*stlying for about page*/
+
+/*end stlying for about page*/
+.main {
+display: grid;
+grid-template-columns: repeat(4, [col] 1fr);
+grid-template-rows: repeat(1, [row] 1fr);
+margin: 0 auto;
+}
+.content-about {
+ grid-column: 1 / span 4;
+ grid-row: 1;
+ margin: 1rem;
+ text-align: left;
 }
 
 /*styling for core case study mobile*/
@@ -970,6 +995,8 @@ margin: 1rem;
  margin: 0 auto;
  padding: 1rem;
 }
+/*end contact page*/
+
 
 @media screen and (min-width: 575px) {
  .container {
@@ -982,7 +1009,7 @@ margin: 1rem;
  background-repeat: no-repeat;
  background-size: cover;
  display: grid;
- grid-gap: 1rem;
+ grid-gap: 2rem;
  grid-template-columns: repeat(4, [col] 1fr);
  grid-template-rows: repeat(3, [row] 1fr);
  margin: 0 auto;
@@ -991,12 +1018,48 @@ margin: 1rem;
 .content {
  grid-column: 2 / span 2;
  grid-row: 2;
+ margin: 0 auto;
+}
+
+.left-1 {
+ grid-column: 2 / span 2;
+ grid-row: 1;
+ margin: 0 auto;
 }
 
 .right-1 {
  grid-column: 2 / span 2;
+ grid-row: 2;
  margin: 0 auto;
 }
+
+/*core stlying*/
+.hero-core {
+ background-image: url('../images/corehmpg.png');
+ background-position: center;
+ background-repeat: no-repeat;
+ height:70rem;
+ margin: 0 auto;
+}
+
+.box-2 {
+display: grid;
+grid-gap: 2rem;
+grid-template-columns: repeat(4, [col] 1fr);
+grid-template-rows: repeat(2, [row] auto );
+}
+
+.core-l1 {
+ grid-column: 1 / span 4;
+ grid-row: 1;
+}
+
+.core-r1 {
+ grid-column: 2 / span 2;
+ grid-row: 2;
+ text-align: center;
+}
+
 
 .hero-contact {
  background-image: url('../images/world.png');
@@ -1065,38 +1128,12 @@ p.by{
   text-align: center;
 }
 
-/*stlying for about me page*/
-.hero-me {
- display: grid;
- grid-template-columns: repeat(4, [col] 1fr);
- grid-template-rows: repeat(1, [row] 1fr);
- margin: 1rem;
-}
-
-.content-about {
- grid-column: 1 / span 4;
-  grid-row: 1;
-  margin: 1rem;
-  text-align: left;
-}
-
-.main {
- display: grid;
- grid-template-columns: repeat(4, [col] 1fr);
- grid-template-rows: repeat(1, [row] 1fr);
- margin: 0 auto;
-}
-/*end stlying for about me page*/
-
-/*styling for resume page*/
-
 @media screen and (min-width: 1100px) {
 .container {
  margin: 0 auto;
 }
 
 h1, h2 {
- margin: 1rem;
  text-align: left;
 }
 
@@ -1108,25 +1145,28 @@ img.icon {
 .nav {
  display: grid;
  grid-template-columns: repeat(4, [col] 1fr);
- grid-template-rows: repeat(1, [row] 1fr);
- grid-gap: 2rem;
+ grid-template-rows: repeat(2, [row] 1fr);
+ grid-gap: 1rem;
 }
 
 .logo {
- grid-column: 1;
- grid-row: 1;
+ grid-column: 1 / span 2;
+ grid-row: 1 / span 2;
+ margin-top: .5rem;
 }
 
 .topnav {
- grid-column: 3 / span 4;
- grid-row: 1;
- margin-right: 1rem;
+ display: block;
+ float: right;
+ grid-column: 3 / span 2;
+ grid-row: 2;
+ margin-bottom: .5rem;
+ text-align: center;
 }
 
 .topnav a {
- float: right;
- display: block;
  text-decoration: none;
+ text-align: center;
 }
 
 .hero-hmpg {
@@ -1138,6 +1178,12 @@ img.icon {
  grid-template-columns: repeat(4, [col] 1fr);
  grid-template-rows: repeat(3, [row] 1fr);
  grid-gap: 2rem;
+}
+
+h1 {
+ font-size: 4.6rem;
+ font-weight:lighter;
+ margin: 0rem 1rem 0rem 1rem;
 }
 
 .content {
@@ -1153,7 +1199,7 @@ img.icon {
   grid-column: 2;
   grid-row: 2;
   display: grid;
-  grid-row-gap: 10px;
+  grid-gap: 1rem;
   grid-template-columns: repeat(4, [col] 1fr );
   grid-template-rows: repeat(1, [row] 1fr);
   margin: 1rem;
@@ -1176,9 +1222,7 @@ img.icon {
   grid-column: 3;
   grid-row: 1;
   margin: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 1rem;
+  padding: 1rem 1rem .5rem 1rem;
 }
 
 .button {
@@ -1196,11 +1240,6 @@ img.icon {
 }
 
 /*styling for core case study page*/
-
-.topnav {
- grid-column: col 3 / span 2;
- grid-row: row;
- }
 
 .hero-core {
  background-image: url('../images/corehmpg.png');
@@ -1770,5 +1809,28 @@ margin: 20px;
  margin: 0 auto;
  padding: 1rem;
  }
+
+/*about me styling*/
+.hero-me {
+ display: grid;
+ grid-template-columns: repeat(4, [col] 1fr);
+ grid-template-rows: repeat(1, [row] 1fr);
+ margin: 1rem;
+}
+
+.main {
+ display: grid;
+ grid-template-columns: repeat(4, [col] 1fr);
+ grid-template-rows: repeat(1, [row] 1fr);
+ margin: 1rem;
+}
+
+.content-about {
+ grid-column: 2 / span 2;
+ grid-row: 1;
+ margin: 1rem;
+ text-align: left;
+}
+/*end about me stlying*/
 
 }
