@@ -56,7 +56,7 @@ hr {
 
 /*all images included with in the website*/
 img.color, .fibspiral, .first-core-phones, .first-it, .core-phones, .sketches,
-.data, .dropbox, .final-it, .font, .flows, .googledrive, .icon, .iterate,
+.data, .dropbox-swot, .final-it, .font, .flows, .googledrive-swot, .icon, .iterate,
 .logo-lg, .logo-sm, .logos, .me, .myrole, .phones, .second-it, .signature, .sketch1, .sketch2,
 .type, .ux-testing, .wireframes {
   height: auto;
@@ -330,20 +330,17 @@ margin: 0 auto;
 
 /*styling for core case study mobile*/
 .hero-core {
- background-image: url('../images/corehmpg.png');
+ background-image: url('../images/corehmpg.jpg');
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
  margin: 0 auto;
- }
-
-.box-2 {
  display: grid;
  grid-gap: 1rem;
  grid-template-columns: repeat(4, [col] 1fr);
  grid-template-rows: repeat(2, [row] auto);
  margin: 0 auto;
-}
+ }
 
 .core-l1 {
  grid-column: 1 / span 4;
@@ -432,30 +429,38 @@ margin: 0 auto;
  /*swot analysis of two of four companies*/
 .area-a1 {
  background-color:#f2f2f2;
- box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
- transition: all 0.3s cubic-bezier(.25,.8,.25,1);
  display: grid;
+ grid-gap: 1rem;
  grid-template-columns: repeat(4, [col] 1fr);
  grid-template-rows: repeat(2, auto);
- margin: 1rem;
-}
-
-.area-a1:hover {
- box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+ margin: 0 auto;
 }
 
 .swot-l {
+ box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
  grid-column: 1 / span 4;
  grid-row: 1;
- margin: 2rem;
- text-align: center;
+ margin: 1rem;
+ padding-left: 6rem;
+}
+
+
+.swot-l:hover {
+ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .swot-r {
+ box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
  grid-column: 1 / span 4;
  grid-row: 2;
- margin: 2rem;
- text-align: center;
+ margin: 1rem;
+ padding-left: 6rem;
+}
+
+.swot-r:hover {
+ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
  /*close out the swot*/
@@ -691,8 +696,8 @@ li {
 }
 
 img.brand {
-  margin: 2rem;
-  width: 70%;
+  margin: 1rem;
+  width: 90%;
 }
 
 .c-idea-two {
@@ -1035,23 +1040,26 @@ margin: 1rem;
 
 /*core stlying*/
 .hero-core {
- background-image: url('../images/corehmpg.png');
+ background-image: url('../images/corehmpg.jpg');
  background-position: center;
  background-repeat: no-repeat;
  height:70rem;
  margin: 0 auto;
-}
-
-.box-2 {
-display: grid;
-grid-gap: 2rem;
-grid-template-columns: repeat(4, [col] 1fr);
-grid-template-rows: repeat(2, [row] auto );
+ display: grid;
+ grid-gap: 1rem;
+ grid-template-columns: repeat(4, [col] 1fr);
+ grid-template-rows: repeat(2, [row] auto );
 }
 
 .core-l1 {
  grid-column: 1 / span 4;
  grid-row: 1;
+ margin: 6rem;
+}
+
+h1 {
+ font-size: 3rem;
+ font-weight: lighter;
 }
 
 .core-r1 {
@@ -1060,7 +1068,69 @@ grid-template-rows: repeat(2, [row] auto );
  text-align: center;
 }
 
+ /*close competitors - icons*/
 
+ /*swot analysis of two of four companies*/
+.area-a1 {
+ background-color:#f2f2f2;
+ display: grid;
+ grid-gap: 1rem;
+ grid-template-columns: repeat(4, [col] 1fr);
+ grid-template-rows: repeat(2, auto);
+ margin: 0 auto;
+}
+
+.swot-l {
+ box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+ grid-column: 1 / span 4;
+ grid-row: 1;
+ margin: 1rem;
+ padding-left: 15rem;
+}
+
+
+.swot-l:hover {
+ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.swot-r {
+ box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+ grid-column: 1 / span 4;
+ grid-row: 2;
+ margin: 1rem;
+ padding-left: 15rem;
+}
+
+.swot-r:hover {
+ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+ /*close out the swot*/
+
+.core-phones {
+ padding: 2rem 2rem 0rem 2rem;
+}
+
+.button-final {
+ display: block;
+ background-color: #79C5E7;
+ border: none;
+ border-radius: .5rem;
+ color: #ffffff;
+ font-family: 'Poppins Medium';
+ font-style: normal;
+ font-size: 1.6rem;
+ margin: 0 7.5rem 2.5rem 7.5rem;
+ padding: 1rem;
+ text-align: center;
+ text-decoration: none;
+}
+
+}
+/*end core case study*/
+
+/*contact page*/
 .hero-contact {
  background-image: url('../images/world.png');
  background-position: center;
@@ -1242,28 +1312,28 @@ h1 {
 /*styling for core case study page*/
 
 .hero-core {
- background-image: url('../images/corehmpg.png');
+ background-image: url('../images/corehmpg.jpg');
  background-position: center;
  background-repeat: no-repeat;
- height:55rem;
+ height: 50rem;
  margin: 0 auto;
-}
-
-.box-2 {
-display: grid;
-grid-gap: 2rem;
-grid-template-columns: repeat(4, [col] 1fr);
-grid-template-rows: repeat(3, [row] auto );
+ display grid;
+ grid-gap: 2rem;
+ grid-template-columns: repeat(4, [col] 1fr);
+ grid-template-rows: repeat(2, [row] auto );
 }
 
 .core-l1 {
  grid-column: 2;
- grid-row: 1 / span 3;
+ grid-row: 1 / span 2;
+ margin: 0 auto;
+ padding-top: 4.5rem;
 }
 
 .core-r1 {
  grid-column: 3;
- grid-row: 1 / span 3;
+ grid-row: 1 / span 2;
+ padding-top: 4.5rem;
 }
 
 .area-1 {
@@ -1322,44 +1392,43 @@ img.icon {
 /*competitor icons */
 .insidebox-2 {
  display: grid;
- grid-gap: 20px;
- grid-row-gap: 20px;
+ grid-gap: 1rem;
  grid-template-columns: repeat(4, [col] 1fr );
  grid-template-rows: repeat(1, [row] 2fr );
- margin: 20px;
-  }
+ margin: 1rem;
+}
 
 .competitors {
 grid-column: 2 / span 2;
 grid-row: 1;
 text-align: center;
 }
-
 /*close competitors - icons*/
 
 /*swot analysis of two of four companies*/
 .area-a1 {
  background-color: #f2f2f2;
  display: grid;
- grid-gap: 20px;
- grid-row-gap: 20px;
+ grid-gap: 1rem;
  grid-template-columns: repeat(4, [col] 1fr );
- grid-template-rows: repeat(1, [row] 3fr);
- margin: 20px;
+ grid-template-rows: repeat(4, [row] 1fr);
+ margin: 0 auto;
 
   }
 .swot-l {
- grid-column: 2;
- grid-row: 1;
- margin: 20px;
+ grid-column: 1 / span 2;
+ grid-row: 1 /span 4;
+ margin: 0 auto;
+ padding: 1rem;
  text-align: center;
 }
 
 .swot-r {
- grid-column: 3;
- grid-row: 1;
+ grid-column: 3 / span 2;
+ grid-row: 1 / span 4;
+ margin: 0 auto;
+ padding: 1rem;
  text-align: center;
- margin: 20px;
 }
 /*close out the swot*/
 
@@ -1389,15 +1458,15 @@ text-align: center;
  margin-left: 10px;
 }
 
-.f{
+.f {
  grid-column: 2 / span 2 ;
-    grid-row: 2;
-  }
+ grid-row: 2;
+}
 
-  .g {
-    grid-column: 2 / span 2;
-    grid-row: 3;
-  }
+.g {
+ grid-column: 2 / span 2;
+ grid-row: 3;
+}
 
 .g li {
  color: #616161;
@@ -1442,7 +1511,7 @@ text-align: center;
 
 img[src="images/icons/susan.png"]{
   height: auto;
-  padding: 0 8rem 0 8rem;
+  padding: 1rem 10rem 0 10rem;
   text-align: center;
   width: 100%;
 }
@@ -1454,7 +1523,7 @@ text-align: center;
 
 img[src="images/icons/daniel.png"]{
   height: auto;
-  padding: 0 8rem 0 8rem;
+  padding: 1rem 10rem 0 10rem;
   text-align: center;
   width: 100%;
 }
@@ -1753,6 +1822,8 @@ margin: 20px;
 .y {
   grid-column: 2 / span 2;
   grid-row: 1;
+  margin: 2rem;
+  padding: 1rem;
   text-align: center;
 }
 
