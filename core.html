@@ -19,19 +19,22 @@
    </head>
 <body>
 <section class="container">
- <header>
-   <div class="nav">
-     <div class="logo">
-        <a href="index.html"><img class="logo" src="images/logo-lg.png" alt="logo"/></a>
-      </div>
-        <div class="topnav">
-          <a href="about.html">about</a>
-          <a href="core.html">case study</a>
-          <a href="contact.html">contact</a>
-          <a href="../images/resume.pdf" target="_blank" rel="noopener noreferrer">resume</a>
-        </div>
-    </div>
-  </header>
+  <header class="header">
+      <a href="index.html"><img class="logo" src="images/logo-lg.png" alt="logo"/></a>
+      <input class="menu-btn"
+       type="checkbox" id="menu-btn" />
+     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+     <ul class="menu">
+      <li>
+        <a href="about.html">about</a></li>
+      <li>
+       <a href="core.html">case study</a></li>
+      <li>
+      <a href="contact.html">contact</a></li>
+      <li>
+      <a href="../images/resume.pdf" target="_blank" rel="noopener noreferrer">resume</a></li>
+    </ul>
+ </header>
   <hr>
   <section class="hero-core">
        <div class="core-l1">
@@ -183,6 +186,7 @@
              </p>
              <h3 class="sub-head">Frustrations</h3>
              <p class="about">
+               <ul>
                <li>Organization of files &#38; data</li>
                <li>
                  Collaboration
@@ -190,12 +194,15 @@
                <li>
                 Storage of data
                </li>
+               </ul>
              </p>
              <h3 class="sub-head">Goals</h3>
              <p class="about">
+               <ul>
               <li>Keeping track of student collaboration and progress on projects.</li>
               <li>Ability to view projects/data anywhere </li>
               <li>Keep costs low and affordable for students</li>
+            </ul>
              </p>
          </div>
       <div class="persona-r">
@@ -214,15 +221,19 @@
                like to finda  way to incorporate more user friendly beneifts into his everyday use of cloud storage. Perhaps files be automatically synced from each devices and stored.</p>
               <h3 class="sub-head">Frustrations</h3>
               <p class="about">
-               <li>Ability to share via social media</li>
-               <li>Simultaneous updates of documents and tracking for these updates.</li>
-               <li>Security of shared data.</li>
+               <ul>
+                <li>Ability to share via social media</li>
+                <li>Simultaneous updates of documents and tracking for these updates.</li>
+                <li>Security of shared data.</li>
+               </ul>
              </p>
              <h3 class="sub-head">Goals</h3>
              <p class="about">
-             <li>Community enhanced by collaboration.</li>
-             <li>Organization of files, images, and videos for projects.</li>
-             <li>Storage of data accessible through multiple platforms.</li>
+               <ul>
+                <li>Community enhanced by collaboration.</li>
+                <li>Organization of files, images, and videos for projects.</li>
+                <li>Storage of data accessible through multiple platforms.</li>
+              </ul>
              </p>
        </div>
       </div>
@@ -241,6 +252,7 @@
       <div class="ux-priorities">
         <div class="c-high">
         <h3 class="sub-head">High Priorties</h3>
+        <ul>
         <li>Seamless saving of an item with auto save.</li>
         <li>Ability to save a link in social media.</li>
         <li>Auto uploading of files when initially created.</li>
@@ -252,9 +264,11 @@
         <li>Ability to create notes, documents, and spreadsheets within cloud.</li>
         <li>After documents, notes and spreadsheets with cloud.</li>
         <li>Intuitive software.</li>
+      </ul>
       </div>
       <div class="c-medium">
         <h3 class="sub-head">Medium Priorities</h3>
+        <ul>
         <li>Save content while collaborating within the file.</li>
         <li>Ability to share content via sharable link on social media or within email.</li>
         <li>Supports an active directory where the user can easily see what files/folders/groups are in their cloud.</li>
@@ -264,6 +278,7 @@
         <li>Encryption of files when activated by the user for shared content.</li>
         <li>Two step verification.</li>
         <li>Single sign on.</li>
+        </ul>
       </div>
       <div class="c-low">
         <h3 class="sub-head">Low Priorities</h3>
@@ -451,8 +466,8 @@
 <section class="footer">
    <div class="footer-bkgrnd">
      <div class="footer-links">
-      <a href="https://www.linkedin.com/in/christinabarker35"><img class="footer" src="images/icons/linkedin.png" alt="linkedin"/></a>
-      <a href="https://github.com/okibc25"><img class="footer" src="images/icons/github.png" alt="github"/></a>
+      <a href="https://www.linkedin.com/in/christinabarker35"><img class="linkedin" src="images/icons/linkedin.jpg" alt="linkedin"/></a>
+      <a href="https://github.com/okibc25"><img class="github" src="images/icons/github.jpg" alt="github"/></a>
     </div>
     <hr class="one">
     <hr class="two">
