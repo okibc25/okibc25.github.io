@@ -63,7 +63,8 @@ body {
   cursor: pointer;
   display: inline-block;
   float: right;
-  padding: 28px 20px;
+  margin: 1rem 3rem 0 0;
+  padding: 2.8rem 2rem;
   position: relative;
   user-select: none;
 }
@@ -132,10 +133,11 @@ body {
 a {
   color: #000;
 }
+/*end navigation*/
 
 h1 {
  font-family: 'Poppins';
- font-weight:bold;
+ font-weight:lighter;
  font-style: normal;
  font-size: 2.75rem;
  color: #262627;
@@ -165,8 +167,8 @@ hr {
  border: none;
  border-radius: 5px;
  color: #ffffff;
- font-family: 'Poppins Medium';
- font-style: normal;
+ font-family: 'Poppins';
+ font-style:normal;
  font-size: 1.6rem;
  text-align: center;
  text-decoration: none;
@@ -174,17 +176,12 @@ hr {
 
 /*all images included with in the website*/
 img.color-palette, .fibspiral, .first-core-phones, .first-it, .core-phones, .sketches,
-.data, .dropbox-swot, .final-it, .font, .flows, .googledrive-swot, .icon, .iterate,
-.logo-lg, .logo-sm, .logos, .me, .myrole, .phones, .second-it, .signature, .sketch1, .sketch2,
-.type, .ux-testing, .wireframes {
+.data, .dropbox-swot, .final-it, .font, .flows, .googledrive-swot, .icon, .iteraterations, .logo-lg,
+.logos, .me, .myrole, .phones, .second-it, .signature, .sketch1, .sketch2, .type, .ux-testing, .wireframes {
   height: auto;
   width: 100%;
 }
 
-img.icon {
- height: auto;
- width: 100%;
-}
 
 li {
  color: #616161;
@@ -199,7 +196,7 @@ p.about, p.about-project, p.by, p.copy-right, p.project-name, p.title {
  font-family: 'Poppins';
  font-style: normal;
  font-weight: 300;
- font-size: 1.6rem;
+ font-size: 1.3rem;
  color:#616161;
 }
 
@@ -233,28 +230,12 @@ p.slogan {
  font-size: 2.5rem;
 }
 
-.topnav a {
- font-family: 'Poppins';
- font-size: 1.6em;
- font-style: normal;
- font-weight: normal;
- color: #262627;
- padding: 1rem;
- text-decoration: none;
-}
-
-/*specific styling for mobile hmpg*/
-.topnav {
- grid-column: 1 / span 4;
- grid-row: 1;
- text-align: center;
-}
-
 .logo {
  grid-column: 1 / span 4;
  grid-row: 1;
  text-align: center;
  margin: 0 auto;
+ max-width: 60%;
 }
 
 .hero-hmpg {
@@ -287,32 +268,42 @@ p.slogan {
 }
 
 .left-1 {
+  background-color: #f2f2f2;
+ border-radius: 1rem;
  grid-column:1 / span 4;
  grid-row: 1;
  margin: 1rem;
+ padding: 2rem;
+}
+
+h2.project-name {
+ padding-top: 1rem;
 }
 
 p.about{
-  padding-bottom: 1rem;
+ padding-bottom: 1rem;
 }
 
 .right-1 {
+  background-color: #f2f2f2;
+ border-radius: 1rem;
  grid-column: 1 / span 4;
  grid-row: 2;
  margin: 1rem;
+ padding: 1rem;
 }
 
 .footer {
  background-color: #f2f2f2;
  display: grid;
  grid-template-columns: repeat(4, [col] 1fr);
- grid-template-rows: repeat(1, [row] 1fr);
+ grid-template-rows: repeat(2, [row] 1fr);
 }
 
 .footer-bkgrnd {
  background-color: #ffffff;
  grid-column: 1 / span 4;
- grid-row: 1;
+ grid-row: 1 / span 2;
  margin: 2rem;
  padding: 1rem;
 }
@@ -320,6 +311,7 @@ p.about{
 .footer-links {
  background-color: #ffffff;
  display: flex;
+ grid-row: 1;
  justify-content: center;
  padding: .5rem;
 }
@@ -329,19 +321,27 @@ img.linkedin {
 }
 
 img.github {
- padding-left: .2rem;
+ padding-left: .3rem;
 }
 
 hr.one {
- border-radius: 2rem;
- color:#79C5E7;
+ height: 1px;
+ border: none;
+ color:#002447;
+ background-color: #002447;
+ grid-row: 2;
  margin: .5rem;
+ padding: .3rem;
 }
 
 hr.two {
-  border-radius: .5rem;
-  color:#002447;
-  margin: .5rem;
+ height: 5px;
+ border: none;
+ color:#79C5E7;
+ background-color: #79C5E7;
+ grid-row: 2;
+ margin: .5rem;
+ padding: .5rem;
 }
 
 /*styling for about me page*/
@@ -350,14 +350,27 @@ hr.two {
  grid-template-columns: repeat(4, [col] 1fr);
  grid-template-rows: repeat(1, [row] 1fr);
  grid-gap: 1rem;
- justify-content: space-between;
+ justify-content: space-around;
  margin: 0 auto;
+}
+
+.content-me {
+ grid-column: 2 / span 2;
+ grid-row: 1;
+ margin: 0 auto;
+ margin-top: 9rem;
+}
+
+.content {
+ grid-column: 2 / span 2;
+ grid-row: 1;
+ margin: 1rem 0 0 0;
 }
 
 img.me {
  display: block;
  margin: auto;
- padding: 2rem 7rem 2rem 7rem;
+ padding: 1rem 6rem;
 }
 
 .main {
@@ -377,7 +390,7 @@ img.me {
 
 /*styling for contact page*/
 .hero-contact {
- background-image: url('../images/world.png');
+ background-image: url('../images/world.jpg');
  background-position: center;
  background-repeat: no-repeat;
  background-size: contain;
@@ -402,6 +415,7 @@ img.signature {
 }
 
 .form {
+ border-radius: 1rem;
  grid-column: 1 / span 4;
  grid-row: 2;
  margin: 0 auto;
@@ -409,8 +423,10 @@ img.signature {
  }
 
  input, textarea, button {
-   font-family: 'Poppins Light';
-   font-size: 1em;
+   border-radius: 1rem;
+   font-family: 'Poppins';
+   font-size: 1.5em;
+   font-weight: lighter;
    color:#616161;
    border: 1px solid #f2f2f2;
    background-color: #ffffff;
@@ -427,7 +443,13 @@ img.signature {
 
  button {
   background-color: #79C5E7;
+  border-radius: 1rem;
+  font-family: 'Poppins';
+  font-size: 1em;
+  font-weight: lighter;
   color: #ffffff;
+  margin: 1rem;
+  padding: 1rem;
  }
 /*end styling for contact me page*/
 
@@ -439,7 +461,6 @@ img.signature {
 p.copy-right {
  text-align: center;
 }
-
 
 h1 {
  margin: 0rem 1rem 0rem 1rem;
@@ -520,14 +541,14 @@ img.phones {
  grid-gap: 1rem;
  grid-template-columns: repeat(4, [col] 1fr);
  grid-template-rows: repeat(2, [row] auto);
- justify-content: space-between;
- margin: 0 auto;
+ justify-content: space-around;
+ margin-top: 6rem;
  }
 
 .core-l1 {
  grid-column: 1 / span 4;
  grid-row: 1;
- margin: 1rem;
+ margin: 8rem 1rem 1rem 1rem;
 }
 
 .core-r1 {
@@ -735,7 +756,7 @@ img.phones {
  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-li {
+p .about li {
  margin: 1rem;
  text-align: left;
 }
@@ -911,7 +932,7 @@ img.brand {
 
 .m {
  grid-column: 1 / span 4;
- grid-row: 1;
+ grid-row: 5;
  margin: 1rem;
  text-align: center;
 }
@@ -1132,7 +1153,7 @@ margin: 1rem;
  border: none;
  border-radius: 5px;
  color: #ffffff;
- font-family: 'Poppins Medium';
+ font-family: 'Poppins';
  font-style: normal;
  font-size: 1.6rem;
  margin: 0px 7.5rem 2.5rem 7.5rem;
@@ -1164,33 +1185,6 @@ margin: 1rem;
   margin: 0 auto;
 }
 
-.header li {
- float: left;
-}
-
-.header li a {
- display: block;
- padding: 20px 30px;
-}
-
-.header .menu {
- clear: none;
- float: right;
- max-height: none;
-}
-
-.header .menu-icon {
-    display: none;
-  }
-
-
-img.color-palette, .first-core-phones, .first-it, .core-phones, .sketches,
-.data, .dropbox-swot, .final-it, .font, .flows, .googledrive-swot, .icon, .iterate,
-.logo-lg, .logo-sm, .logos, .me, .myrole, .phones, .second-it, .signature, .sketch1, .sketch2,
-.type, .ux-testing, .wireframes {
-  height: auto;
-  width: 65%;
-}
 
 /*stlying for homepage*/
 .hero-hmpg{
@@ -1202,8 +1196,12 @@ img.color-palette, .first-core-phones, .first-it, .core-phones, .sketches,
  grid-gap: 2rem;
  grid-template-columns: repeat(4, [col] 1fr);
  grid-template-rows: repeat(3, [row] 1fr);
- justify-content: space-between;
+ justify-content: space-around;
  margin: 0 auto;
+}
+
+.logo {
+  max-width: 35%;
 }
 
 .content-hmpg {
@@ -1212,6 +1210,7 @@ img.color-palette, .first-core-phones, .first-it, .core-phones, .sketches,
  grid-gap: 2rem;
  margin: 0 auto;
 }
+
 .content-hmpg >h1 {
  font-size: 3.5rem;
 }
@@ -1226,12 +1225,18 @@ img.color-palette, .first-core-phones, .first-it, .core-phones, .sketches,
  grid-column: 2 / span 2;
  grid-row: 1rem;
  margin: 1rem;
+ padding: 1rem;
+ text-align: center;
+}
+h2.project-name {
+  padding-top: 3rem;
 }
 
 .right-1 {
  grid-column: 2 / span 2;
  grid-row: 2;
  margin: 1rem;
+ padding: 1rem;
  text-align: center;
 }
 
@@ -1260,12 +1265,13 @@ p.by {
  grid-template-columns: repeat(4, [col] 1fr);
  grid-template-rows: repeat(2, [row] 1fr);
  justify-content: space-around;
+ margin-top: 6rem;
 }
 
 .core-l1 {
  grid-column: 2 / span 2;
  grid-row: 1;
- margin-top: 3rem;
+ margin-top: 6rem 1rem 1rem 1rem;
 }
 
 h1 {
@@ -1327,7 +1333,7 @@ h1 {
  border: none;
  border-radius: .5rem;
  color: #ffffff;
- font-family: 'Poppins Medium';
+ font-family: 'Poppins';
  font-style: normal;
  font-size: 1.6rem;
  margin: 0 7.5rem 2.5rem 7.5rem;
@@ -1363,27 +1369,33 @@ h1, h2 {
  text-align: left;
 }
 
-img.color-palette, .fibspiral, .first-core-phones, .first-it, .core-phones, .sketches,
-.data, .dropbox-swot, .final-it, .font, .flows, .googledrive-swot, .icon, .iterate,
-.logo-lg, .logo-sm, .logos, .me, .myrole, .phones, .second-it, .signature, .sketch1, .sketch2,
-.type, .ux-testing, .wireframes {
-  height: auto;
-  width: 100%;
+.header li {
+ float: left;
+}
+
+.header li a {
+ display: block;
+ padding: 20px 30px;
+ margin-top: 2rem;
+}
+
+.header .menu {
+ clear: none;
+ float: right;
+ max-height: none;
+}
+
+.header .menu-icon {
+ display: none;
+}
+
+.logo {
+ max-width: 50%;
 }
 
 img.icon {
  margin:0;
  padding-top: 2rem;
-}
-
-img.signature {
-display: block;
-margin: 0 auto;
-width: 10%;
-}
-
-.header .logo {
-  width: 25%;
 }
 
 h1 {
@@ -1437,7 +1449,7 @@ h1 {
   border-radius: 5px;
   color: #ffffff;
   display: block;
-  font-family: 'Poppins Medium';
+  font-family: 'Poppins';
   font-style: normal;
   text-align: center;
   text-decoration: none;
@@ -1457,14 +1469,14 @@ h1 {
  grid-gap: 2rem;
  grid-template-columns: repeat(4, [col] 1fr);
  grid-template-rows: repeat(2, [row] auto );
- margin-top: 6rem;
+ margin-top: 9rem;
 }
 
 .core-l1 {
  grid-column: 2;
  grid-row: 1 / span 2;
  margin: 0 auto;
- padding-top: 4.5rem;
+ padding-top: 5rem;
 }
 
 .core-r1 {
@@ -1775,8 +1787,14 @@ grid-row: 3;
 }
 
 .m {
- grid-column: 2 / span 2;
+ grid-column: 1 / span 4;
  grid-row: 1;
+ margin:2rem;
+ text-align: center;
+}
+
+img.iterations {
+  max-width: 50%;
 }
 
 .area-3n {
@@ -1799,7 +1817,7 @@ grid-row: 3;
 }
 
  img.color {
-   width: 75%;
+   max-width: 50%;
  }
 
 .o {
@@ -1941,6 +1959,7 @@ margin: 20px;
  margin: 2rem;
 }
 
+
 .x {
  grid-column: 2 / span 2;
  grid-row: 3;
@@ -1976,7 +1995,7 @@ margin: 20px;
   border-radius: .5rem;
   color: #ffffff;
   grid-column: 2;
-  font-family: 'Poppins Medium';
+  font-family: 'Poppins';
   font-style: normal;
   text-align: center;
   text-decoration: none;
@@ -1999,7 +2018,7 @@ margin: 20px;
 
 /*styling for contact page*/
 .hero-contact {
- background-image: url('../images/world.png');
+ background-image: url('../images/world.jpg');
  background-position: center;
  background-repeat: no-repeat;
  background-size: contain;
@@ -2021,11 +2040,13 @@ margin: 20px;
 
 img.signature {
 display: block;
-margin: 0;
-width: 10%;
+margin-left: 4rem;
+padding: 1rem;
+max-width: 10%;
 }
 
 .form {
+ border-radius: 1rem;
  grid-column: 3 / span 2;
  grid-row: 1;
  margin: 0 auto;
@@ -2038,11 +2059,12 @@ width: 10%;
  display: grid;
  grid-template-columns: repeat(4, [col] 1fr);
  grid-template-rows: repeat(1, [row] 1fr);
- margin: 0 auto;
+ justify-content: space-around;
+ margin-top: 6rem;
 }
 
 img.me {
- width: 50%;
+ max-width: 50%;
 }
 
 .main {
