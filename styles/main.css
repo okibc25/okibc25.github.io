@@ -53,9 +53,9 @@ body {
 
 /* menu */
 .header .menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height .2s ease-out;
+ clear: both;
+ max-height: 0;
+ transition: max-height .2s ease-out;
 }
 
 /* menu icon */
