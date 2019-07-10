@@ -411,7 +411,7 @@ img.me {
  margin: 0 auto;
  margin-top: 4rem;
  justify-content: space-around;
- padding: 1rem;
+ padding-top: 1rem;
 }
 
 .contact-hmpg{
@@ -456,9 +456,10 @@ img.signature {
 .form button {
  background-color: #79C5E7;
  border-radius: 1rem;
+ display: inline-block;
  font-family: 'Poppins';
  font-size: 1em;
- font-weight: lighter;
+ font-weight: normal;
  color: #ffffff;
  margin: 1rem;
  padding: 1rem;
@@ -695,6 +696,7 @@ img.phones {
  grid-column: 1 / span 4;
  grid-row: 2;
  margin: 1rem;
+ padding: 2rem;
  text-align: center;
 }
 
@@ -1159,20 +1161,6 @@ margin: 1rem;
  padding: 2rem 2rem 0rem 2rem;
 }
 
-.button-final {
- display: block;
- background-color: #79C5E7;
- border: none;
- border-radius: 5px;
- color: #ffffff;
- font-family: 'Poppins';
- font-style: normal;
- font-size: 1.6rem;
- margin: 0px 7.5rem 2.5rem 7.5rem;
- padding: 10px;
- text-align: center;
- text-decoration: none;
-}
 .area-10 {
  display: grid;
  grid-gap: 1rem;
@@ -1187,11 +1175,6 @@ margin: 1rem;
 }
 
 /*styling for contact page form box*/
-.topnav{
-  grid-column: 1 / span 4;
-  grid-row: 2;
-}
-
 @media screen and (min-width: 575px) {
  .container {
   margin: 0 auto;
@@ -1348,21 +1331,6 @@ h1 {
 .core-phones {
  padding: 2rem 2rem 0rem 2rem;
 }
-
-.button-final {
- display: block;
- background-color: #79C5E7;
- border: none;
- border-radius: .5rem;
- color: #ffffff;
- font-family: 'Poppins';
- font-style: normal;
- font-size: 1.6rem;
- margin: 0 7.5rem 2.5rem 7.5rem;
- padding: 1rem;
- text-align: center;
- text-decoration: none;
-}
 /*end core case study*/
 
 /*contact page*/
@@ -1376,8 +1344,7 @@ img.signature {
  max-width: 10%;
 }
 
-}
-/*end 575px view*/
+}/*end 575px view*/
 
 @media screen and (min-width: 1100px) {
 .container {
@@ -1488,7 +1455,6 @@ p.slogan, p.quote, p.by {
 }
 
 /*end specific styling for the hmpg*/
-
 .button {
  align-items: center;
  background-color: #79C5E7;
@@ -2099,7 +2065,8 @@ margin: 20px;
  grid-template-columns: repeat(4, [col] 1fr);
  grid-template-rows: repeat(1, [row] 1fr);
  margin: 0 auto;
- padding: 1rem;
+ padding-top: 5rem;
+ padding-bottom: 5rem;
 }
 
 .contact-hmpg{
