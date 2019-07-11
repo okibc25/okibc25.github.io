@@ -178,9 +178,10 @@ h3 {
 }
 
 /*all images included with in the website*/
-img.color-palette, .fibspiral, .first-core-phones, .first-it, .core-phones, .sketches,
-.data, .dropbox-swot, .final-it, .font, .flows, .googledrive-swot, .icon, .iterations, .logo-lg,
-.logos, .me, .myrole, .phones, .second-it, .signature, .sketch1, .sketch2, .type, .ux-testing, .wireframes {
+img.color-palette, .first-core-phones, .first-it, .core-phones, .sketches,
+.data, .dropbox-swot, .final-it, .font, .flows, .googledrive-swot, .icon, .iterations,
+.large, .local, .logo-lg, .logos, .me, .myrole, .phones, .second-it, .signature,
+.sketch1, .sketch2, .type, .ux-testing, .wireframes {
  height: auto;
  width: 100%;
 }
@@ -598,7 +599,7 @@ img.phones {
 }
 
 .role {
- background-color: #f2f2f2;
+ background-color: #ffffff;
  grid-column: 1 / span 4;
  grid-row: 1;
  margin: 2rem;
@@ -790,12 +791,12 @@ p .about li {
   }
 
 .ux-priorities {
-  background-color: #ffffff;
-  border-radius: 2px;
-  display: grid;
-  grid-template-columns: repeat(4, [col] 1fr);
-  grid-template-rows: repeat(4, auto);
-  margin: 1rem;
+ background-color: #ffffff;
+ border-radius: 2px;
+ display: grid;
+ grid-template-columns: repeat(4, [col] 1fr);
+ grid-template-rows: repeat(4, auto);
+ margin: 1rem;
   }
 
 .c-high {
@@ -1504,7 +1505,7 @@ p.slogan, p.quote, p.by {
 img.icon {
  float: left;
  margin: 0 auto;
- text-align:justify;
+ text-align: justify;
  width: 10%;
 }
 
@@ -1539,6 +1540,7 @@ p.about-project{
 }
 
 .insidebox-1 {
+ background-color: #f1f1f1;
  display: grid;
  grid-gap: 2rem;
  grid-template-columns: repeat(4, [col] 1fr );
@@ -1546,10 +1548,12 @@ p.about-project{
  margin: 20px;
   }
 
-.myrole {
- grid-column: 2 / span 2;
+.role {
+ grid-column: 1 / span 4;
  grid-row: 1;
- padding-left: 30px;
+ margin: 2rem;
+ padding: 2rem 2rem 2rem 2rem;
+ text-align: left;
 }
 
 .c {
@@ -1592,7 +1596,8 @@ text-align: center;
 }
 
 .swot-l {
- grid-column: 1 / span 2;
+ background-color: #fff;
+ grid-column: 1 /span 2;
  grid-row: 1 /span 4;
  margin: 0 auto;
  padding: 1rem;
@@ -1600,7 +1605,8 @@ text-align: center;
 }
 
 .swot-r {
- grid-column: 3 / span 2;
+ background-color: #fff;
+ grid-column: 3/ span 2;
  grid-row: 1 / span 4;
  margin: 0 auto;
  padding: 1rem;
@@ -1659,7 +1665,7 @@ text-align: center;
 /* Grid Area-2 Start*/
 .area-2 {
  display: grid;
- grid-gap: 2rem;
+ grid-gap: 1rem;
  grid-template-columns: repeat(4, [col] 1fr );
  grid-template-rows: repeat(4, [row] auto );
  margin: 1rem;
@@ -1688,10 +1694,12 @@ text-align: center;
 img[src="images/icons/susan.png"]{
  display: block;
  float: none;
- margin: auto;
- width: 25%;
+ margin: 0 auto;
+ margin-top: 1rem;
+ width: 20%;
  text-align: center;
 }
+
 .persona-r {
 grid-column: 2;
 grid-row: 1;
@@ -1699,11 +1707,12 @@ text-align: center;
 }
 
 img[src="images/icons/daniel.png"]{
-  display: block;
-  float: none;
-  margin: auto;
-  width: 25%;
-  text-align: center;
+ display: block;
+ float: none;
+ margin: 0 auto;
+ margin-top: 1rem;
+ width: 20%;
+ text-align: center;
 }
 
 .persona-l > h2.title, .persona-r > h2.title {
