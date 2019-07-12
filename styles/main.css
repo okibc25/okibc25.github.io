@@ -3,7 +3,6 @@
 html {
   /**base size**/
 font-size: 10px;
-scroll-padding-top: 2rem;
 }
 
 body {
@@ -50,7 +49,7 @@ img.logo {
  float: left;
  margin: 0 auto;
  max-width: 50%;
- padding: 2rem 2rem;
+ padding: 2rem 3rem;
  text-decoration: none;
 }
 
@@ -68,7 +67,7 @@ img.logo {
  display: inline-block;
  float: right;
  margin: 0 auto;
- padding: 2.5rem 4rem;
+ padding: 3rem 4rem;
  position: relative;
  user-select: none;
 }
@@ -166,7 +165,7 @@ h3 {
 }
 
 .button {
- background-color: #79C5E7;
+ background-color: #055C9D;
  border: none;
  border-radius: 5px;
  color: #ffffff;
@@ -186,14 +185,19 @@ img.color-palette, .first-core-phones, .first-it, .core-phones, .sketches,
  width: 100%;
 }
 
+ul{
+  list-style: circle;
+  list-style-position: inside;
+}
+
 li {
  color: #616161;
  font-family: 'Poppins';
  font-size: 1.6em;
  font-style: normal;
  font-weight: 300;
- line-height: 2.5rem;
- margin: .5rem;
+ line-height: 2rem;
+ margin: 1rem;
  text-align: left;
 }
 
@@ -260,8 +264,6 @@ p.slogan {
 }
 
 .project {
- box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
- transition: all 0.3s cubic-bezier(.25,.8,.25,1);
  display: grid;
  grid-template-columns: repeat(4, [col] 1fr);
  grid-gap: 2rem;
@@ -269,7 +271,9 @@ p.slogan {
 }
 
 .left-1 {
-  background-color: #f2f2f2;
+ box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+ background-color: #f2f2f2;
  border-radius: 1rem;
  grid-column:1 / span 4;
  grid-row: 1;
@@ -286,7 +290,9 @@ p.about{
 }
 
 .right-1 {
-  background-color: #f2f2f2;
+ box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+ background-color: #f2f2f2;
  border-radius: 1rem;
  grid-column: 1 / span 4;
  grid-row: 2;
@@ -384,13 +390,13 @@ img.me {
  grid-template-columns: repeat(4, [col] 1fr);
  grid-template-rows: repeat(1, [row] 1fr);
  margin: 0 auto;
- }
+}
 
 .content-main {
-  grid-column: 1 / span 4;
-  grid-row: 1;
-  margin: 0 auto;
- }
+ grid-column: 1 / span 4;
+ grid-row: 1;
+ margin: 0 auto;
+}
 
 .content-about {
  grid-column: 1 / span 4;
@@ -412,7 +418,7 @@ img.me {
  margin: 0 auto;
  margin-top: 4rem;
  justify-content: space-around;
- padding-top: 1rem;
+ padding-top: 4rem;
 }
 
 .contact-hmpg{
@@ -439,11 +445,11 @@ img.signature {
  border-radius: 1rem;
  font-family: 'Poppins';
  font-size: 1.5em;
- font-weight: lighter;
- color:#616161;
+ font-weight: normal;
+ color:#676767;
  border: 1px solid #f2f2f2;
  background-color: #ffffff;
- margin: .5em;
+ margin: 0 auto;
  padding: 2em;
  transition: all 0.3s ease-in-out;
  width: 100%;
@@ -462,7 +468,7 @@ img.signature {
  font-size: 1em;
  font-weight: normal;
  color: #ffffff;
- margin: 1rem;
+ margin: 0 auto;
  padding: 1rem;
  }
 /*end styling for contact me page*/
@@ -555,6 +561,7 @@ img.phones {
  grid-template-columns: repeat(4, [col] 1fr);
  grid-template-rows: repeat(2, [row] auto);
  justify-content: space-between;
+ padding-top: 2rem;
  }
 
 .core-l1 {
@@ -645,12 +652,12 @@ img.phones {
 }
 
 .swot-l {
+ background-color: #ffffff;
  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
  grid-column: 1 / span 4;
  grid-row: 1;
- margin: 1rem;
- padding-left: 6rem;
+ margin: 0 auto;
 }
 
 
@@ -659,12 +666,12 @@ img.phones {
 }
 
 .swot-r {
+ background-color: #ffffff;
  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
  grid-column: 1 / span 4;
  grid-row: 2;
- margin: 1rem;
- padding-left: 6rem;
+ margin: 0 auto;
 }
 
 .swot-r:hover {
@@ -1437,7 +1444,7 @@ p.slogan, p.quote, p.by {
 
 .left-1 {
  background-color: #f2f2f2;
- grid-column: 2;
+ grid-column: 1 / span 2;
  grid-row: 1;
  margin: 1rem;
  padding: 1rem;
@@ -1449,7 +1456,7 @@ p.slogan, p.quote, p.by {
 
 .right-1 {
   background-color: #f2f2f2;
-  grid-column: 3;
+  grid-column: 3 / span 2;
   grid-row: 1;
   margin: 1rem;
   padding: 1rem 1rem .5rem 1rem;
@@ -1458,7 +1465,7 @@ p.slogan, p.quote, p.by {
 /*end specific styling for the hmpg*/
 .button {
  align-items: center;
- background-color: #79C5E7;
+ background-color: #055C9D;
  border: none;
  border-radius: 5px;
  color: #ffffff;
@@ -1466,8 +1473,8 @@ p.slogan, p.quote, p.by {
  font-family: 'Poppins';
  font-size: 1rem;
  font-style: normal;
- height: 3rem;
- padding: 1rem;
+ height: 4rem;
+ padding: .5rem;
  position: relative;
  text-align: center;
  text-decoration: none;
@@ -1479,7 +1486,7 @@ p.slogan, p.quote, p.by {
  background-image: url('../images/corehmpg.jpg');
  background-position: center;
  background-repeat: no-repeat;
- height: 50rem;
+ height: 60rem;
  margin: 0 auto;
  display grid;
  grid-gap: 2rem;
@@ -1489,17 +1496,17 @@ p.slogan, p.quote, p.by {
 }
 
 .core-l1 {
- grid-column: 2;
+ grid-column: 1/ span 2;
  grid-row: 1 / span 2;
- margin: 0 auto;
- padding-top: 8rem;
+ margin: 1rem;
+ padding: 8rem ;
 }
 
 .core-r1 {
- grid-column: 3;
+ grid-column: 3/ span 2;
  grid-row: 1 / span 2;
  margin: 0 auto;
- padding-top: 4.5rem;
+ padding: 4.5rem;
 }
 
 img.icon {
@@ -1596,21 +1603,19 @@ text-align: center;
 }
 
 .swot-l {
- background-color: #fff;
+ background-color: #ffffff;
  grid-column: 1 /span 2;
  grid-row: 1 /span 4;
- margin: 0 auto;
- padding: 1rem;
- text-align: center;
+ margin: 4rem;
+ padding: 2rem;
 }
 
 .swot-r {
- background-color: #fff;
+ background-color: #ffffff;
  grid-column: 3/ span 2;
  grid-row: 1 / span 4;
- margin: 0 auto;
- padding: 1rem;
- text-align: center;
+ margin: 4rem;
+ padding: 2rem;
 }
 /*close out the swot*/
 
