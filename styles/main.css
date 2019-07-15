@@ -1441,7 +1441,7 @@ p.slogan, p.quote, p.by {
 
 img.phones {
 margin: 0 auto;
-padding:
+padding: 3rem;
 }
 
 /*end specific styling for the hmpg*/
@@ -1491,6 +1491,11 @@ padding:
  margin: 0 auto;
  padding: 5rem;
 }
+
+img.phones {
+ padding: 3rem;
+}
+
 .button {
  margin-top: 3rem;
 }
@@ -1505,7 +1510,7 @@ img.icon {
 h2.title {
 display: inline-block;
 margin: 0 auto;
-padding: 3rem 1rem 1rem 1rem;
+padding: 5rem 1rem 1rem 1rem;
 }
 
 p.about-project{
@@ -1791,7 +1796,7 @@ margin: 0 auto;
 }
 
 .l h2.title {
- padding-top: 7rem;
+ padding-top: 8rem;
 }
 
 .ideas {
@@ -1868,6 +1873,10 @@ img.iterations {
  grid-template-columns: repeat(4, [col] 1fr);
  grid-template-rows: repeat(1, [row] 1fr);
  margin: 1rem;
+}
+
+.o h2.title {
+ padding-top: 6rem;
 }
 
 .o {
@@ -2005,7 +2014,7 @@ margin: 2rem;
 }
 
 .v h2.title {
- padding-top: 6rem;
+ padding-top: 8rem;
 }
 
 .w {
@@ -2100,7 +2109,7 @@ margin: 2rem;
 }
 
 .z h2.title {
- padding-top: 8rem;
+ padding-top: 9rem;
 }
 
 /*styling for contact page*/
