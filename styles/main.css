@@ -2121,7 +2121,8 @@ margin: 2rem;
  display: grid;
  grid-gap: 2rem;
  grid-template-columns: repeat(4, [col] 1fr);
- grid-template-rows: repeat(1, [row] 1fr);
+ grid-template-rows: repeat(1, [row] auto);
+ height: 80vh;
  margin: 0 auto;
  padding-top: 5rem;
  padding-bottom: 5rem;
@@ -2152,7 +2153,7 @@ max-width: 10%;
  }
 
 .form button {
-
+font-size: 2rem;
 }
 /*finish styling for contact me page*/
 
@@ -2165,12 +2166,21 @@ max-width: 10%;
  justify-content: space-around;
  margin-top: 4rem;
 }
+
 .content-me {
  grid-column: 2 / span 2;
  grid-row:1;
 }
+
 img.me {
- max-width: 30%;
+ max-width: 50%;
+ margin: 0 auto;
+ padding: 1rem;
+}
+
+.content-me h1 {
+ margin-top: 2rem;
+ padding-top: 2rem;
 }
 
 .main {
@@ -2195,6 +2205,15 @@ img.me {
  margin-top: 8rem;
  padding-bottom: 3rem;
  text-align: left;
+}
+
+.footer-links img.linkedin {
+ margin: 1rem;
+}
+
+.footer-links img.github {
+  margin: 1rem;
+  padding-top: .5rem;
 }
 /*end about me stlying*/
 
