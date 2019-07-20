@@ -48,7 +48,7 @@ img.logo {
  display: block;
  float: left;
  margin: 0 auto;
- max-width: 50%;
+ max-width: 70%;
  padding: 2rem 3rem;
  text-decoration: none;
 }
@@ -165,7 +165,7 @@ h3 {
 }
 
 .button {
- background-color: #0336FF;
+ background-color: #1379F1;
  border: none;
  border-radius: 5px;
  color: #ffffff;
@@ -312,15 +312,16 @@ p.about{
  display: flex;
  grid-row: 1;
  justify-content: center;
- padding: .5rem;
+ margin: 0;
+ padding: 2rem;
 }
 
 img.linkedin {
- padding-top: .5rem;
+ padding: 0rem 1rem;
 }
 
 img.github {
- padding-left: .3rem;
+ padding: 0rem 1rem;
 }
 
 hr.one {
@@ -589,7 +590,7 @@ img.phones {
 }
 
 .insidebox-1 {
- background-color: #ffffff;
+ background-color: #f1f1f1;
  border-radius: 2px;
  display: grid;
  grid-template-columns: repeat(4, [col] 1fr);
@@ -599,7 +600,7 @@ img.phones {
 
 .role {
  background-color: #ffffff;
- grid-column: 1 / span 4;
+ grid-column: 1/ span 4;
  grid-row: 1;
  margin: 2rem;
  padding: 2rem 2rem 2rem 2rem;
@@ -1191,7 +1192,7 @@ margin: 1rem;
 }
 
 img.logo {
- max-width: 30%;
+ max-width: 35%;
 }
 
 .header .menu-icon {
@@ -1343,6 +1344,7 @@ p.about, p.about-project, p.by, p.copy-right, p.project-name, p.title {
  font-size: 1.6rem;
  line-height: 2.5rem;
  color:#616161;
+ padding-bottom: 0rem;
 }
 
 p.by {
@@ -1374,7 +1376,7 @@ p.by {
 }
 
 img.logo {
- max-width: 20%;
+ max-width: 25%;
  padding: 2rem 4rem;
 }
 
@@ -1423,7 +1425,7 @@ p.slogan, p.quote, p.by {
  grid-column: 1 / span 2;
  grid-row: 1;
  margin: 1rem;
- padding: 14rem;
+ padding: 12rem;
  text-align: center;
 }
 
@@ -1447,7 +1449,7 @@ padding: 3rem;
 /*end specific styling for the hmpg*/
 .button {
  align-items: center;
- background-color: #0336FF;
+ background-color: #1379F1;
  border: none;
  border-radius: 5px;
  color: #ffffff;
@@ -1510,7 +1512,7 @@ img.icon {
 h2.title {
 display: inline-block;
 margin: 0 auto;
-padding: 5rem 1rem 1rem 1rem;
+padding: 3rem 1rem 1rem 1rem;
 }
 
 p.about-project{
@@ -1670,6 +1672,7 @@ text-align: center;
 .h {
  grid-column: 2 / span 2;
  grid-row: 1;
+ margin: 1rem;
 }
 
 /*subgrid for personas*/
@@ -1720,13 +1723,14 @@ img[src="images/icons/daniel.png"]{
 .i {
  grid-column: 2 / span 2;
  grid-row: 2;
- margin: 0 auto;
+ margin: 2rem;
+ padding-top: 1rem;
 }
 
 .j {
 grid-column: 2 / span 2;
 grid-row: 3;
-margin: 0 auto;
+margin: 2rem;
 }
 
 .ux-priorities {
@@ -1762,7 +1766,7 @@ margin: 0 auto;
  grid-gap: 2rem;
  grid-template-columns: repeat(4, [col] 1fr );
  grid-template-rows: repeat(1, [row] auto );
- margin: 1rem;
+ margin: 2rem;
 }
 
 .c-large{
@@ -1796,7 +1800,7 @@ margin: 0 auto;
 }
 
 .l h2.title {
- padding-top: 8rem;
+ padding-top: 6rem;
 }
 
 .ideas {
@@ -1804,7 +1808,7 @@ margin: 0 auto;
  grid-gap: 2rem;
  grid-template-columns: repeat(4, [col] 1fr );
  grid-template-rows: repeat(1, [row] auto );
- margin: 1rem;
+ margin: 2rem;
 }
 
 .c-idea-one {
@@ -2014,7 +2018,7 @@ margin: 2rem;
 }
 
 .v h2.title {
- padding-top: 8rem;
+ padding-top: 6rem;
 }
 
 .w {
@@ -2026,7 +2030,7 @@ margin: 2rem;
  grid-gap: 1rem;
  grid-template-columns: repeat(3, [col] 1fr);
  grid-template-rows: repeat(1, [row] auto );
- margin: 1rem;
+ margin: 2rem;
  text-align: center;
 }
 
@@ -2104,12 +2108,12 @@ margin: 2rem;
 
 .z {
  grid-column: 2 / span 2;
-  grid-row: 1;
-  margin: 2rem;
+ grid-row: 1;
+ margin: 2rem;
 }
 
 .z h2.title {
- padding-top: 9rem;
+ padding-top: 7rem;
 }
 
 /*styling for contact page*/
@@ -2208,12 +2212,11 @@ img.me {
 }
 
 .footer-links img.linkedin {
- margin: 1rem;
+ padding: none;
 }
 
 .footer-links img.github {
-  margin: 1rem;
-  padding-top: .5rem;
+ padding-top: 2rem 0rem;
 }
 /*end about me stlying*/
 
