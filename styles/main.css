@@ -133,11 +133,12 @@ a {
 
 h1 {
  font-family: 'Poppins';
- font-weight:lighter;
+ font-weight: bold;
  font-style: normal;
  font-size: 2.75rem;
  color: #262627;
- margin: .5rem;
+ margin: 0 auto;
+ padding: 1rem;
 }
 
 h2 {
@@ -185,7 +186,7 @@ h3 {
 
 /*all images included with in the website*/
 img.color-palette, .first-core-phones, .first-it, .core-phones, .sketches,
-.data, .dropbox-swot, .final-it, .font, .flows, .googledrive-swot, .icon, .iterations,
+.data, .dropbox-swot, .final-it, .font, .flows, .googledrive-swot, .iterations,
 .large, .local, .logo-lg, .logos, .me, .myrole, .phones, .second-it, .signature,
 .sketch1, .sketch2, .type, .ux-testing, .wireframes {
  height: auto;
@@ -251,63 +252,93 @@ p.slogan {
 }
 
 .hero-hmpg {
- background-image: url('../images/min-three.jpeg');
- background-position:center;
- background-repeat: no-repeat;
- background-size: cover;
  display: grid;
  grid-template-columns: repeat(12, minmax(0,1fr));
- grid-template-rows: repeat(4, [row] 1fr);
+ grid-template-rows: repeat(3, [row] 1fr);
  grid-gap: 2rem;
  margin: 0 auto;
 }
 
 .content-hmpg{
  grid-column: 1 / -1;
- grid-row: 2;
+ grid-row: 2/ span 2;
  grid-gap: 1rem;
  margin: 0 auto;
  padding: 1rem;
 }
 
 .project {
+ background-color: #ffffff;
  display: grid;
- grid-template-columns: repeat(12, minmax(0,1fr));
- grid-template-rows: repeat(7, [row] auto);
  grid-gap: 1rem;
+ grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+ margin: 1rem;
+ padding: 1rem;
+}
+
+.icons {
+ width:auto;
+ height: auto;
+ max-width: 40%;
+ max-height: 100%;
+}
+
+.item-1{
+ background-color: #374785;
+ box-sizing: border-box;
+ padding-top: 100%;
+ position: relative;
+ width: 100%;
+}
+
+.item-2 {
+ background-color:#F76c6c;
+ padding-top: 100%;
+ box-sizing: border-box;
+ position: relative;
+}
+
+.item-3 {
+ background-color: #F3D250;
+ padding-top: 100%;
+ box-sizing: border-box;
+ position: relative;
+}
+
+.overlay {
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ height: 100%;
+ width: 100%;
+ opacity: 0;
+ transition: .5s ease;
+ background-color: #ffffff;
+}
+
+.content:hover .overlay {
+  opactiy: 1;
+}
+
+.text {
+ color: #000000;
+ font-size: 20px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ -webkit-transform: translate(-50%, -50%);
+ -ms-transform: translate(-50%, -50%);
+ transform: translate(-50%, -50%);
+ text-align: center;
+}
+
+.text > h2.project-name {
  margin: 0 auto;
-}
-
-.left-1 {
- background-color: #d3c4be;
- grid-column: 1 / -1;
- grid-row: 2 / span 2;
- margin: 1rem;
- padding: 1rem;
-}
-
-h2.project-name {
  padding-top: 1rem;
-}
-
-p.about{
- padding-bottom: 1rem;
-}
-
-.right-2 {
- background-color: #d3c4be;
- grid-column: 1 / -1;
- grid-row: 4/ span 2;
- margin: 1rem;
- padding: 1rem;
-}
-
-.right-3 {
- background-color: #d3c4be;
- grid-column: 1/ -1;
- grid-row: 6/ span 2;
- margin: 1rem;
- padding: 1rem;
+ text-align: center;
+ text-decoration: none;
 }
 
 .footer {
@@ -465,7 +496,7 @@ p.copy-right {
 }
 
 h1 {
- margin: 0rem 1rem 0rem 1rem;
+ margin: 0 auto;
  text-align: left;
 }
 
@@ -532,7 +563,7 @@ img.phones {
 
 /*styling for core case study mobile*/
 .hero-core {
- background-color:#90CCF4;
+ background-color:#C1C8E4;
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
@@ -1075,8 +1106,6 @@ margin: 1rem;
  padding: 1rem;
 }
 
-.
-
 /*styling for contact page form box*/
 @media screen and (min-width: 575px) {
  .container {
@@ -1084,7 +1113,7 @@ margin: 1rem;
 }
 
 img.logo {
- max-width: 35%;
+ max-width: 30%;
 }
 
 .header .menu-icon {
@@ -1102,55 +1131,52 @@ img.logo {
  display: grid;
  grid-gap: 2rem;
  grid-template-columns: repeat(12, minmax(0,1fr));
- grid-template-rows: repeat(4, [row] 1fr);
+ grid-template-rows: repeat(3, [row] 1fr);
  justify-content: space-around;
  margin: 0 auto;
+ padding: 1rem;
 }
 
 .content-hmpg {
- grid-column: 2/ span 6;
+ grid-column: 4/ span 6;
  grid-row: 2;
  grid-gap: 1rem;
  margin: 0 auto;
+ padding-top: 5rem;
 }
 
 .content-hmpg >h1 {
- font-size: 3.4rem;
-}
-
-.project {
- display: grid;
- grid-gap: 1rem;
- grid-template-columns:repeat(12, minmax(0,1fr));
- grid-template-rows: repeat(4, [row] 1fr);
+ font-size: 3rem;
  margin: 0 auto;
 }
 
-.left-1 {
- grid-column: 1 / span 4;
- grid-row: 2/ span 3;
- margin: 1rem;
- padding;: 1rem;
+.project {
+ background-color: #ffffff;
+ display: grid;
+ grid-gap: 1rem;
+ grid-template-columns: repeat(auto-fill, minmax(30%, .5fr));
+ margin: 0 auto;
 }
 
-.left-1 h2.project-name {
+.item {
+ background-color: white;
+ padding-top: 100%;
+ box-sizing: border-box;
+ position: relative;
+}
+
+.item .content {
+ position: absolute;
+ top: 0;
+ right: 0;
+ left: 0;
+ bottom: 0;
+}
+
+.item-1 h2.project-name {
  font-size: 2.5rem;
  text-align: left;
  padding-top: 3rem;
-}
-
-.right-2 {
- grid-column: 5 / span 4;
- grid-row: 2/ span 3;
- margin: 1rem;
- padding;: 1rem;
-}
-
-.right-3{
- grid-column: 9/ span 4;
- grid-row: 2/ span 3;
- margin: 1rem;
- padding;: 1rem;
 }
 
 /*styling for about page*/
@@ -1168,7 +1194,7 @@ p.by {
 
 /*core stlying*/
 .hero-core {
- background-color: #90CCF4;
+ background-color: #C1C8E4;
  background-position: center;
  background-repeat: no-repeat;
  height:70rem;
@@ -1187,7 +1213,7 @@ p.by {
  margin-top: 6rem 1rem 1rem 1rem;
 }
 
-h1 {
+.core-l1 > h1 {
  font-size: 3rem;
  font-weight: lighter;
 }
@@ -1214,10 +1240,9 @@ img.signature {
  margin: 0 auto;
  max-width: 10%;
 }
-
 }/*end 575px view*/
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1025px) {
 .container {
  margin: 0 auto;
 }
@@ -1269,85 +1294,64 @@ img.logo {
  padding: 2rem 4rem;
 }
 
-h1 {
- font-size: 4.6rem;
- font-weight:lighter;
- margin: 0rem 1rem 0rem 1rem;
-}
-
 /*specific stying for hmpg*/
 .content-hmpg {
- border-color: .2rem solid white;
- grid-column: 2/ span 3;
- grid-row: 3;
+ grid-column: 4/ span 6;
+ grid-row: 2/ 3;
  grid-gap: .5rem;
  margin: 0 auto;
+ padding-top: 4rem;
 }
 
 .content-hmpg >h1 {
- font-size: 4.1rem;
+ font-size: 5rem;
+ font-weight: bold;
+ margin: 0 auto;
+
 }
 
 p.slogan, p.quote, p.by {
   margin: .5rem 1rem 0rem 1rem;
 }
 
-.content {
+.project {
  grid-column: 2 / span 2;
  grid-row: 2;
- margin-top: 2rem;
+ margin: 0 auto;
  text-align: left;
-}
-
-.project {
  background-color: #ffffff;
  display: grid;
  grid-gap: 1rem;
- grid-template-columns: repeat(12, minmax(0,1fr));
- grid-template-rows: repeat(3, [row] .5fr);
- margin: 1rem;
+ grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
 }
 
-.left-1 {
- grid-column: 1/ span 4;
- grid-row: 2;
- margin: 1rem auto;
- padding: 10rem;
- text-align: center;
+.item-1 {
+ padding-top: 100%;
+ box-sizing: border-box;
+ position: relative;
 }
 
-.left-1 > h2.project-name {
+.item-2{
+ background-color:
+}
+
+.item-3 {
+box-sizing: border-box;
+}
+
+.item-1 .text, .item-2 .text, .item-3 .text {
+ position: absolute;
+ top: 0;
+ right: 0;
+ left: 0;
+ bottom: 0;
+}
+
+.item > h2.project-name {
  font-size: 3rem;
  margin-bottom: .3rem;
 }
 
-/*.right-1 {
-  grid-column: 6 / span 6;
-  grid-row: 1;
-  margin: 1rem;
-  padding: 1rem 1rem .5rem 1rem;
-}
-
-img.phones {
-margin: 0 auto;
-padding: 3rem;
-}*/
-
-.right-2{
- grid-column: 5 / span 4;
- grid-row: 2;
- margin: 1rem auto;
- padding: 10rem;
- text-align: center;
-}
-
-.right-3 {
- grid-column: 9 / span 4;
- grid-row: 2;
- margin: 1rem auto;
- padding: 10rem;
- text-align: center;
-}
 
 /*end specific styling for the hmpg*/
 .button {
@@ -1367,7 +1371,7 @@ padding: 3rem;
 /*styling for core case study page*/
 
 .hero-core {
- background-color: #90CCF4;
+ background-image: url('../images/corehmpg.jpg');
  background-position: center;
  background-repeat: no-repeat;
  margin: 0 auto;
@@ -2018,5 +2022,26 @@ img.me {
  padding-top: 2rem 0rem;
 }
 /*end about me stlying*/
+.hero-bright{
+ display: grid;
+ grid-template-columns: repeat(12, minmax(0, 1fr));
+ grid-template-rows: repeat(14, [row] 1fr);
+ margin: 0 auto;
+}
+
+.con-bright-top {
+ grid-column: 4/8;
+ grid-row: 4/5;
+ margin:0 auto;
+ padding: 1rem;
+}
+
+.con-bright-bottom {
+ background-color: #F3D250;
+ opacity: 0.5;
+ grid-column: 1/-1;
+ grid-row: 6/ 14;
+}
+
 
 }
